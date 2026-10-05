@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infocutter Code Quality"
+  short_description: "Flutter architecture quality guardrails"
+  default_prompt: "Use $infocutter-code-quality to review or refactor the Infocutter Flutter app with strict object, interface, and verification rules."

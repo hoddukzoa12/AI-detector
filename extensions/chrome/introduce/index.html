@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="인포커터 — 그 댓글, 더는 당신이 보지 않아도 됩니다" />
+<meta property="og:description" content="악플로 지친 당신의 평화를 먼저. 보고 싶지 않은 이름이 든 글을 조용히 가려 줍니다. 당신이 약해서가 아니에요." />
+<meta property="og:image" content="assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="인포커터 — 그 댓글, 더는 당신이 보지 않아도 됩니다" />
+<meta name="twitter:description" content="악플로 지친 당신의 평화를 먼저. 보고 싶지 않은 이름이 든 글을 조용히 가려 줍니다. 당신이 약해서가 아니에요." />
+<meta name="twitter:image" content="assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>인포커터 — 그 댓글, 더는 당신이 보지 않아도 됩니다</title>
+<meta name="description" content="악플로 지친 당신의 평화를 먼저. 보고 싶지 않은 이름이 든 글을 조용히 가려 줍니다. 당신이 약해서가 아니에요." />
+<!-- introduce 랜딩. 베이스: template-260530230607.html · 스킬: infocutter-introduce-page -->
+<style>
+  :root{
+    --bg:#fff; --surface:#f5f5f5; --ink:#141414; --sub:#787878; --dim:#a3a3a3;
+    --line:#e5e5e5; --brand:#0a6cff; --brand-dark:#084fbf; --brand-tint:#f6f9ff;
+    --brand-soft:#e6efff; --navy:#071d49; --accent:#d97706;
+    --radius:.5rem; --radius-lg:.75rem; --maxw:1080px; --readw:720px;
+    --font:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);
+    line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .read{max-width:var(--readw);margin:0 auto;padding:0 24px}
+  .section{padding:60px 0}
+  .section + .section{border-top:1px solid var(--line)}
+  .muted{color:var(--sub)}
+  .center{text-align:center}
+  h1{font-size:36px;line-height:1.25;letter-spacing:-.02em;margin:.2em 0 .4em;font-weight:700}
+  h2{font-size:24px;line-height:1.3;letter-spacing:-.01em;margin:0 0 14px;font-weight:700}
+  h3{font-size:17px;margin:0 0 6px;font-weight:600}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--brand);margin:0 0 6px}
+  .lead{font-size:18px;color:var(--sub)}
+  .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+  .site-header .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink)}
+  .nav{display:flex;gap:22px}
+  .nav a{color:var(--sub);font-size:15px}
+  .nav a:hover{color:var(--ink);text-decoration:none}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--brand);
+    color:#fff;padding:13px 24px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .15s ease}
+  .btn:hover{background:var(--brand-dark);text-decoration:none}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .btn-ghost:hover{background:var(--surface)}
+  .badge{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+  .grid{display:grid;gap:16px}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid-2{grid-template-columns:1fr}}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);padding:22px}
+  .steps{display:grid;gap:14px;margin-top:20px}
+  .step{display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 22px}
+  .step .num{flex:0 0 auto;width:30px;height:30px;border-radius:999px;background:var(--brand);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+  .note{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;color:var(--sub);font-size:15px}
+  .hero{padding:96px 0 76px;text-align:center;background:linear-gradient(180deg,var(--brand-tint),#fff 72%)}
+  .helpline{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .helpline span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px}
+  .site-footer{border-top:1px solid var(--line);padding:36px 0 64px;color:var(--dim);font-size:13px}
+  .morelink{font-size:15px;color:var(--sub);margin-top:12px}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container bar">
+    <span class="brand">인포커터</span>
+    <nav class="nav">
+      <a href="#why">왜 아플까</a>
+      <a href="blog/index.html">블로그</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#start">시작하기</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="read">
+    <span class="badge">악플로 지친 당신에게</span>
+    <h1>그 댓글, 더는 당신이<br/>보지 않아도 됩니다</h1>
+    <p class="lead center" style="margin:0 auto 28px">당신의 평화가 먼저예요. 보고 싶지 않은 이름이 든 글은 조용히 가려 둘게요.</p>
+    <a class="btn" href="#start">무료로 시작하기 — 1분 설치</a>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="read">
+    <p class="eyebrow">WHY</p>
+    <h2>왜 이렇게까지 아플까요</h2>
+    <p>악플 하나에 하루가 무너지는 건, 당신이 예민하거나 약해서가 아니에요.</p>
+    <p class="muted">사람의 뇌는 작은 공동체에서 살아남도록 진화했어요. 그래서 '거절'과 '비난'을 생존 위협으로 받아들입니다. 연구에 따르면 사회적 배제의 고통은 몸이 다칠 때와 같은 뇌 영역을 켜요. 익명의 수많은 말은, 우리 뇌가 감당하도록 설계된 적이 없는 양입니다. 아픈 게 당연해요.</p>
+    <p class="morelink">→ 더 읽기: <a href="blog/16-your-brain-was-not-built-for-this.html">우리 뇌는 악플을 견디도록 진화하지 않았어요</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="read">
+    <p class="eyebrow">CARE</p>
+    <h2>마음을 지키는 첫 걸음</h2>
+    <div class="grid grid-2" style="margin-top:18px">
+      <div class="card"><h3>그만 보기</h3><p class="muted">안 보는 건 도망이 아니라 가장 강력한 보호예요. 손을 잠시 내려놓아도 괜찮아요.</p></div>
+      <div class="card"><h3>자신을 탓하지 않기</h3><p class="muted">당신이 부족해서 들은 말이 아니에요. 스스로에게 친구처럼 다정해도 됩니다.</p></div>
+      <div class="card"><h3>몸부터 돌보기</h3><p class="muted">잠, 산책, 천천히 쉬는 숨. 지금 여기로 돌아오는 작은 것들이 마음을 데웁니다.</p></div>
+      <div class="card"><h3>혼자 두지 않기</h3><p class="muted">믿을 수 있는 사람에게, 또는 전문가에게 말해보세요. 함께면 한결 가벼워져요.</p></div>
+    </div>
+    <p class="morelink">→ 더 읽기: <a href="blog/17-finding-peace-of-mind.html">다시 마음이 평화로워지는 작은 방법들</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="read">
+    <p class="eyebrow">HOW</p>
+    <h2>인포커터가 대신 해드릴게요</h2>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><div><h3>이름을 알려주세요</h3><p class="muted">마주치고 싶지 않은 이름과 별칭을 등록합니다.</p></div></div>
+      <div class="step"><span class="num">2</span><div><h3>조용히 가려 드려요</h3><p class="muted">어떤 사이트든 그 이름이 든 글이 보이면 흐리게 처리해, 당신이 읽지 않아도 되게 합니다.</p></div></div>
+      <div class="step"><span class="num">3</span><div><h3>나중을 위한 건 알아서 보관해요</h3><p class="muted">혹시 필요해질 순간을 대비해, 당신이 직접 캡처하느라 애쓰지 않도록 조용히 모아 둡니다.</p></div></div>
+    </div>
+    <p class="note" style="margin-top:18px">수집한 내용은 당신 기기에만 저장되고 외부로 전송되지 않아요. 열어보고 말고는 온전히 당신의 선택입니다. 필요할 때를 위한 자료일 뿐, 공증·법률 상담을 대신하지는 않습니다.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="read">
+    <p class="eyebrow">HELP</p>
+    <h2>혼자 견디지 마세요</h2>
+    <p class="muted">힘들 때는 꼭 누군가에게 말하세요. 전문 상담은 큰 힘이 됩니다.</p>
+    <div class="helpline">
+      <span>자살예방상담전화 <strong>109</strong> (24시간)</span>
+      <span>정신건강위기상담 <strong>1577-0199</strong></span>
+      <span>가까운 정신건강복지센터</span>
+    </div>
+  </div>
+</section>
+
+<section class="section center" id="start" style="background:var(--brand-tint)">
+  <div class="read">
+    <h2>오늘은, 그만 봐도 괜찮아요</h2>
+    <p class="muted" style="margin-bottom:24px">이름만 알려주세요. 나머지는 우리가 조용히 할게요. (설치 1분)</p>
+    <a class="btn" href="#">무료로 시작하기</a>
+    <a class="btn btn-ghost" href="blog/index.html" style="margin-left:8px">블로그 둘러보기</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 페이지는 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)
+  </div>
+</footer>
+
+</body>
+</html>

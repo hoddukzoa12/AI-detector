@@ -1,0 +1,16 @@
+FROM node:22-alpine
+
+WORKDIR /app
+
+COPY scripts ./scripts
+COPY templates ./templates
+
+ENV INFOCUTTER_TEMPLATE_HOST=0.0.0.0
+ENV INFOCUTTER_TEMPLATE_PORT=41800
+ENV INFOCUTTER_TEMPLATE_DIR=/data/templates
+
+RUN mkdir -p /data/templates && cp -R /app/templates/. /data/templates/
+
+EXPOSE 41800
+
+CMD ["node", "./scripts/templates-server.mjs"]

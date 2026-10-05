@@ -1,0 +1,365 @@
+{
+  "@@locale": "ko",
+  "appTitle": "인포커터",
+  "searchOrTypeWebAddress": "검색어나 웹 주소를 입력하세요",
+  "findOnPageHint": "페이지에서 찾기...",
+  "openWebPageFirst": "먼저 웹페이지를 열어주세요",
+  "pickerActiveOnHost": "{host}에서 선택 모드가 켜졌습니다",
+  "@pickerActiveOnHost": {
+    "placeholders": {
+      "host": {
+        "type": "String"
+      }
+    }
+  },
+  "hiddenSelectorOnHost": "{host}에서 {selector}를 숨겼습니다",
+  "@hiddenSelectorOnHost": {
+    "placeholders": {
+      "selector": {
+        "type": "String"
+      },
+      "host": {
+        "type": "String"
+      }
+    }
+  },
+  "savedOffline": "{url}을 오프라인에 저장했습니다.",
+  "@savedOffline": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "unableToSave": "저장할 수 없습니다.",
+  "share": "공유",
+  "login": "로그인",
+  "username": "사용자 이름",
+  "password": "비밀번호",
+  "cancel": "취소",
+  "ok": "확인",
+  "openNewWindow": "새 창 열기",
+  "saveWindow": "창 저장",
+  "savedWindows": "저장된 창",
+  "newTab": "새 탭",
+  "newIncognitoTab": "새 시크릿 탭",
+  "favorites": "즐겨찾기",
+  "history": "방문 기록",
+  "webArchives": "웹 아카이브",
+  "findOnPage": "페이지에서 찾기",
+  "desktopMode": "데스크톱 모드",
+  "settings": "설정",
+  "developers": "개발자 도구",
+  "inAppWebViewProject": "InAppWebView 프로젝트",
+  "closeTabs": "탭 닫기",
+  "closeAllTabs": "모든 탭 닫기",
+  "linkPreview": "링크 미리보기",
+  "openInNewTab": "새 탭에서 열기",
+  "openInNewIncognitoTab": "새 시크릿 탭에서 열기",
+  "copyAddressLink": "링크 주소 복사",
+  "shareLink": "링크 공유",
+  "downloadImage": "이미지 다운로드",
+  "shareImage": "이미지 공유",
+  "imageInNewTab": "이미지를 새 탭에서 열기",
+  "searchImageOnGoogle": "Google에서 이미지 검색",
+  "generalSettings": "일반 설정",
+  "themeMode": "테마 모드",
+  "themeModeSystem": "시스템 설정 따르기",
+  "themeModeLight": "라이트",
+  "themeModeDark": "다크",
+  "searchEngine": "검색 엔진",
+  "defaultSite": "기본 사이트",
+  "homePage": "홈 페이지",
+  "on": "켜짐",
+  "off": "꺼짐",
+  "customUrlHomePage": "직접 입력한 홈 페이지 URL",
+  "defaultUserAgent": "기본 User Agent",
+  "debuggingEnabled": "디버깅 사용",
+  "debuggingEnabledDescription": "이 앱의 WebView에 로드된 웹 콘텐츠 디버깅을 활성화합니다. iOS 16.4 미만에서는 디버깅 모드가 항상 활성화됩니다.",
+  "infocutterCutPage": "페이지 블록 숨기기",
+  "infocutterReviewSelection": "블록 숨김 설정",
+  "infocutterReviewSelectionDescription": "{host}에서 숨길 블록과 저장 이름을 확인하세요.",
+  "@infocutterReviewSelectionDescription": {
+    "placeholders": {
+      "host": {
+        "type": "String"
+      }
+    }
+  },
+  "infocutterCardName": "블록 이름",
+  "infocutterSelector": "선택 기준",
+  "infocutterSelectorCandidates": "블록 후보",
+  "infocutterPointerCandidates": "포인터 후보",
+  "infocutterTargetRange": "대상 범위",
+  "infocutterSelectorDetails": "선택 기준 상세",
+  "infocutterNarrowTarget": "대상 좁히기",
+  "infocutterWidenTarget": "대상 넓히기",
+  "infocutterNextSelector": "다음 기준",
+  "infocutterSelectedTarget": "선택한 대상",
+  "infocutterSelectedBadge": "선택됨",
+  "infocutterApplyBlocked": "현재 기준은 적용할 수 없습니다",
+  "infocutterCutSettingsTab": "블록",
+  "infocutterCurrentSiteTab": "사이트",
+  "infocutterWatchTab": "감시",
+  "infocutterEvidenceTab": "캡처",
+  "infocutterSettingsTab": "설정",
+  "infocutterBlockShortTab": "블록",
+  "infocutterTextShortTab": "문구",
+  "infocutterAiShortTab": "AI",
+  "infocutterTemplatesShortTab": "추천",
+  "infocutterDirectRemoveCategory": "직접 지우기",
+  "infocutterAutoRemoveCategory": "자동으로 지우기",
+  "infocutterManageRemovedCategory": "지운 것 관리하기",
+  "infocutterAppSettingsCategory": "설정하기",
+  "infocutterPickBlockRemoveTab": "화면에서 블록 선택해 지우기",
+  "infocutterKeywordBlockRemoveTab": "문구가 있는 블록 지우기",
+  "infocutterNetworkRequestBlockTab": "광고/추적 요청 막기",
+  "infocutterWatchAutoRemoveTab": "감시어가 나오면 자동으로 가리기",
+  "infocutterAiRecommendRemoveTab": "AI가 지울 항목 추천하기",
+  "infocutterCurrentSiteRulesTab": "현재 사이트 규칙 관리하기",
+  "infocutterImportRecommendedRulesTab": "추천 규칙 가져오기",
+  "infocutterEvidenceRecordsViewTab": "캡처 기록 보기",
+  "infocutterGlobalSettingsTab": "인포커터 켜기/끄기",
+  "infocutterClosePanel": "인포커터 패널 닫기",
+  "infocutterActiveProfile": "활성 프로필",
+  "infocutterNoActiveProfile": "활성 프로필 없음",
+  "infocutterNoItemsYet": "아직 없음",
+  "infocutterWatchTargets": "감시 대상",
+  "infocutterEvidenceRecords": "캡처 기록",
+  "infocutterImportAndSettings": "가져오기 및 설정",
+  "infocutterGlobalEnabled": "인포커터 전역 사용",
+  "infocutterProfiles": "프로필",
+  "infocutterProfilesCount": "프로필 {count}개",
+  "@infocutterProfilesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterCreateProfile": "프로필 만들기",
+  "infocutterProfileName": "프로필 이름",
+  "infocutterMatchers": "매처",
+  "infocutterEditMatchers": "매처 편집",
+  "infocutterRename": "이름 변경",
+  "infocutterDelete": "삭제",
+  "infocutterConfirmDeleteMessage": "이 항목을 삭제할까요? 이 작업은 되돌릴 수 없습니다.",
+  "infocutterImportJson": "Chrome JSON 가져오기",
+  "infocutterExportJson": "Chrome JSON 내보내기",
+  "infocutterExportCopied": "내보내기 JSON을 클립보드에 복사했습니다",
+  "infocutterSave": "저장",
+  "infocutterRuleActions": "규칙 작업",
+  "infocutterEditSelector": "선택 기준 편집",
+  "infocutterToggleRuleMode": "숨김/예외 전환",
+  "infocutterFrameScope": "프레임 범위",
+  "infocutterMainFrame": "메인 프레임",
+  "infocutterRuleModeHide": "숨김",
+  "infocutterRuleModeUnhide": "예외",
+  "infocutterTemplates": "사전 규칙 템플릿",
+  "infocutterImportTemplate": "템플릿 가져오기",
+  "infocutterTemplateImported": "{name} 템플릿을 가져왔습니다",
+  "@infocutterTemplateImported": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "infocutterWatchGlobalEnabled": "감시 사용",
+  "infocutterWatchAutoMask": "감지 시 자동 가리기",
+  "infocutterWatchTargetName": "감시 대상 이름",
+  "infocutterWatchAliases": "별칭 (쉼표로 구분)",
+  "infocutterAddWatchTarget": "감시 대상 추가",
+  "infocutterWatchDetections": "최근 감지",
+  "infocutterCaptureEvidence": "현재 페이지 캡처 저장",
+  "infocutterNoEvidenceRecords": "저장된 캡처 기록이 없습니다",
+  "infocutterEvidenceCaptured": "캡처 기록 #{sequence}을 저장했습니다",
+  "@infocutterEvidenceCaptured": {
+    "placeholders": {
+      "sequence": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterAiAutoMasking": "AI 자동 마스킹",
+  "infocutterAiPendingDecision": "앱 버전 포함 여부와 개인정보/비용 정책 결정이 필요합니다.",
+  "infocutterAiConfigured": "{model} 설정됨",
+  "@infocutterAiConfigured": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      }
+    }
+  },
+  "infocutterAiEndpoint": "AI 엔드포인트",
+  "infocutterAiModel": "모델",
+  "infocutterAiApiKey": "API 키",
+  "infocutterAiSaveConfig": "AI 설정 저장",
+  "infocutterAiConfigSaved": "AI 설정을 저장했습니다",
+  "infocutterAiResetHosts": "분석 기록 초기화",
+  "infocutterAiAnalyzedHosts": "분석한 호스트 {count}개",
+  "@infocutterAiAnalyzedHosts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterAiAnalyzeCurrentPage": "현재 페이지 AI 분석",
+  "infocutterAiAnalyzing": "분석 중",
+  "infocutterAiAnalyzeFailed": "AI 분석에 실패했습니다",
+  "infocutterAiApplySuggestion": "제안 적용",
+  "infocutterAiSuggestions": "AI 제안 {count}개",
+  "@infocutterAiSuggestions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterTextBlocks": "텍스트 블록",
+  "infocutterTextBlockGlobalEnabled": "텍스트 블록 숨김 사용",
+  "infocutterTextBlockKeyword": "키워드",
+  "infocutterTextBlockObjectName": "대상 이름",
+  "infocutterTextBlockMinMatchCount": "최소 반복 수",
+  "infocutterTextBlockAddRule": "텍스트 블록 규칙 추가",
+  "infocutterTextBlockProfileEnabled": "현재 사이트 텍스트 규칙 사용",
+  "infocutterCaptureKeyword": "키워드 잡기",
+  "infocutterNetworkFilters": "네트워크 필터",
+  "infocutterNetworkFilterGlobalEnabled": "네트워크 필터 사용",
+  "infocutterNetworkFilterPaste": "ABP/uBlock 네트워크 필터 붙여넣기",
+  "infocutterNetworkFilterImport": "필터 가져오기",
+  "infocutterNetworkFilterImportResult": "가져옴 {imported}개 · 건너뜀 {skipped}개",
+  "@infocutterNetworkFilterImportResult": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterNetworkFilterAllowRule": "허용 규칙",
+  "infocutterNetworkFilterBlockRule": "차단 규칙",
+  "infocutterRemove": "삭제",
+  "infocutterSavedCards": "블록 {count}개",
+  "@infocutterSavedCards": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterSavedRules": "규칙 {count}개",
+  "@infocutterSavedRules": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterEnabledRules": "활성 숨김 {count}개",
+  "@infocutterEnabledRules": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterMatchCount": "매치 {count}개",
+  "@infocutterMatchCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterInvalidSelector": "유효하지 않은 선택 기준입니다",
+  "infocutterSaveRule": "블록 숨기기",
+  "infocutterSessionPickHint": "페이지에서 지울 요소를 클릭해 담으세요",
+  "infocutterStagedCount": "담은 항목 {count}개",
+  "@infocutterStagedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterSessionApplyAll": "전체 적용 ({count})",
+  "@infocutterSessionApplyAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterPickTab": "고르기",
+  "infocutterHiddenListTab": "숨긴 목록",
+  "infocutterTooBroadSelector": "전체 페이지를 가립니다",
+  "infocutterFixSelectorsToApply": "적용하려면 잘못된 기준을 고치세요",
+  "infocutterModulesTab": "모듈 관리",
+  "infocutterModulesHint": "끄면 해당 기능이 모든 사이트에서 멈춥니다",
+  "infocutterBackupRestore": "백업 / 복원",
+  "infocutterExportRules": "내보내기",
+  "infocutterImportRules": "가져오기",
+  "infocutterRulesExported": "블록 규칙을 클립보드에 복사했습니다",
+  "infocutterRulesImported": "규칙을 가져왔습니다",
+  "infocutterImportPasteHint": "내보낸 JSON을 붙여넣으세요",
+  "infocutterUndo": "실행취소",
+  "infocutterEvidenceCaptureFailed": "페이지 캡처를 저장하지 못했습니다",
+  "infocutterImportReplaceWarning": "주의: 가져오면 지금 저장된 규칙을 덮어씁니다",
+  "infocutterImportInvalid": "올바른 설정 형식이 아닙니다",
+  "infocutterAiPrompt": "AI 프롬프트",
+  "infocutterAiPromptHelp": "무엇을 숨길지 지시하세요 (출력 형식은 자동 처리됩니다)",
+  "infocutterAlreadyHiddenSection": "이미 숨긴 것 ({count})",
+  "infocutterPickingNowSection": "지금 고르는 중 ({count})",
+  "infocutterAppliedEditsLiveHint": "여기서 고치면 페이지에 바로 반영돼요",
+  "infocutterDeleteRule": "규칙 삭제",
+  "infocutterCardsManagedInPickTab": "이 프로필의 카드는 '고르기' 탭에서 편집합니다",
+  "settingsAdvanced": "고급",
+  "settingsAdvancedSubtitle": "WebView 세부 설정. 대부분 바꿀 필요가 없습니다.",
+  "settingsDeveloperTools": "개발자 도구",
+  "onboardingTitle": "보고 싶은 것만 남기세요",
+  "onboardingPickBody": "주소창 옆 가위 버튼을 누르고 화면에서 가릴 요소를 고르세요. 같은 사이트에 다시 오면 자동으로 가려집니다.",
+  "onboardingPeekBody": "가린 것을 잠깐 보려면 미리보기를 켜세요. 규칙은 사이트별로 저장됩니다.",
+  "onboardingStart": "시작하기",
+  "onboardingSkip": "건너뛰기",
+  "authUnsupportedTitle": "이 브라우저에서는 로그인할 수 없습니다",
+  "authUnsupportedBody": "Google 등 일부 서비스는 앱에 내장된 브라우저에서의 로그인을 정책상 차단합니다. 앱 문제가 아닙니다.",
+  "authOpenExternally": "기본 브라우저로 열기",
+  "a11yBack": "뒤로",
+  "a11yForward": "앞으로",
+  "a11yReload": "새로고침",
+  "a11yMoreMenu": "추가 메뉴",
+  "a11yTabCount": "열린 탭 수",
+  "a11yInfocutterPick": "가릴 요소 고르기",
+  "a11yActionBar": "브라우저 도구 모음",
+  "a11ySiteInfo": "사이트 정보 보기",
+  "rendererCrashTitle": "페이지를 그리는 과정이 중단됐습니다",
+  "rendererCrashBody": "기기 메모리가 부족하면 시스템이 웹 페이지 프로세스를 먼저 정리합니다. 다른 앱을 닫은 뒤 다시 시도해 보세요.",
+  "rendererCrashRetry": "다시 시도",
+  "loadErrorTitle": "페이지를 불러오지 못했습니다",
+  "loadErrorBodyGeneric": "네트워크 오류이거나 사이트에 연결할 수 없습니다.",
+  "loadErrorTimeout": "응답이 없어 중단했습니다. 연결을 확인한 뒤 다시 시도해 보세요.",
+  "loadErrorRetry": "다시 시도",
+  "siteProtectionBypassTitle": "이 사이트에서 보호 끄기",
+  "siteProtectionBypassSubtitle": "가리기·필터·감시가 페이지를 깨뜨릴 때 잠시 끕니다",
+  "siteProtectionBypassActiveHint": "이 호스트에서는 인포커터 보호가 꺼져 있습니다.",
+  "networkFilterSubscribeUrl": "필터 목록 URL",
+  "networkFilterSubscribeAction": "URL에서 가져오기",
+  "networkFilterSubscribeFailed": "필터 목록을 가져오지 못했습니다: {error}",
+  "@networkFilterSubscribeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "jsDialogDefaultTitle": "이 페이지 메시지",
+  "readerModeTitle": "읽기 모드",
+  "readerModeEmpty": "이 페이지에서 읽을 본문을 찾지 못했습니다.",
+  "readerModeFailed": "읽기 모드를 열지 못했습니다.",
+  "menuReaderMode": "읽기 모드",
+  "pickerStopped": "선택 모드를 종료했습니다"
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="신고 버튼만 눌렀다가 증거도 사라질 수 있어요 — 인포커터 블로그" />
+<meta property="og:description" content="플랫폼에 신고해도 게시글이 사라지면 증거도 사라져요. 지워지기 전에 내가 먼저 보존해야 하는 이유를 정리했어요." />
+<meta property="og:image" content="../assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="신고 버튼만 눌렀다가 증거도 사라질 수 있어요 — 인포커터 블로그" />
+<meta name="twitter:description" content="플랫폼에 신고해도 게시글이 사라지면 증거도 사라져요. 지워지기 전에 내가 먼저 보존해야 하는 이유를 정리했어요." />
+<meta name="twitter:image" content="../assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>신고 버튼만 눌렀다가 증거도 사라질 수 있어요 — 인포커터 블로그</title>
+<meta name="description" content="플랫폼에 신고해도 게시글이 사라지면 증거도 사라져요. 지워지기 전에 내가 먼저 보존해야 하는 이유를 정리했어요." />
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#f5f5f5;--ink:#141414;--muted:#787878;--dim:#a3a3a3;--line:#e5e5e5;--brand:#0a6cff;--brand-dark:#084fbf;--brand-tint:#f6f9ff;--brand-soft:#e6efff;--maxw:720px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--brand)}
+.top{padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{font-size:14px;color:var(--muted);text-decoration:none}
+article{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.32;letter-spacing:-.02em;margin:.2em 0 .3em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px;font-weight:600}
+h2{font-size:21px;margin:1.6em 0 .4em;letter-spacing:-.01em}
+p{margin:.7em 0}
+blockquote{margin:1em 0;padding:12px 18px;background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:8px;color:#374151;font-size:15px}
+ul{padding-left:1.2em}li{margin:.3em 0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.refs a{word-break:break-all}
+footer{padding:28px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:24px}
+/* index */
+.hero{padding:56px 0 28px;text-align:center}
+.hero h1{font-size:30px}.hero p{color:var(--muted);max-width:30em;margin:.4em auto}
+.group{padding:26px 0;border-top:1px solid var(--line)}
+.group h2{font-size:18px;margin:0 0 14px}
+.cardlist{display:grid;gap:12px}
+.post{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .12s ease,background .12s ease}
+.post:hover{border-color:var(--brand);background:var(--brand-tint)}
+.post-thumb{flex:0 0 auto;width:104px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.post-body{flex:1 1 auto;min-width:0}
+.post b{display:block;font-size:16px;margin-bottom:4px}
+.post span{color:var(--muted);font-size:14px}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:6px 0 20px}
+.body-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:14px 0 24px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:20px}.nav a{color:var(--muted);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+.site-footer{border-top:1px solid var(--line);padding:32px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="bar"><a class="brand" href="../index.html">인포커터</a><nav class="nav"><a href="../index.html">소개</a><a href="index.html">블로그</a><a href="../faq.html">FAQ</a><a href="../index.html#start">시작하기</a></nav></div></header>
+<div class="wrap">
+<p style="margin:22px 0 0"><a href="index.html" style="font-size:14px;color:var(--muted)">← 블로그 목록</a></p>
+<article>
+<h1>신고 버튼만 눌렀다가 증거도 사라질 수 있어요</h1>
+<div class="meta">2026-05-30 · <span class="tag">증거</span><span class="tag">가이드</span></div>
+<img class="thumb" src="images/09-why-platform-reporting-is-not-enough.png" alt="신고 버튼만 눌렀다가 증거도 사라질 수 있어요" />
+<img class="body-image" src="images/body/09-why-platform-reporting-is-not-enough.png" alt="본문 이미지" loading="lazy" />
+<p>악플이나 허위 게시글을 발견하면 가장 먼저 '신고' 버튼을 누르게 되죠. 당연한 행동이고, 해야 할 일이 맞아요. 그런데 신고만 하고 기다리다가 나중에 더 막막해지는 경우가 있어요. 왜 그런지 살펴볼게요.</p>
+<h2>플랫폼 신고의 한계</h2>
+<p>플랫폼에 신고하면 두 가지 결과 중 하나가 와요. 게시글이 <strong>삭제</strong>되거나, 신고가 <strong>기각</strong>되거나.</p>
+<p>삭제가 됐을 때의 문제가 의외예요. 게시글이 사라지면 동시에 <strong>증거도 사라져요</strong>. 이후 법적 대응을 하려 해도, 피해 사실을 입증할 화면이 없는 상태가 돼요. 실무에서도 "하루 이틀 지체하는 사이에 게시글이 삭제되어 증거 확보에 어려움을 겪는 경우"가 적지 않다고 해요.</p>
+<p>기각이 됐을 때는 어떨까요. 플랫폼은 신고 처리 결과를 상세히 알려주지 않는 경우가 많아요. 처리 기간도 불투명하고, 재심의를 원하면 방송통신심의위원회에 별도 신청을 해야 해요. 그 사이에도 게시글은 계속 노출되고, 피해는 누적돼요.</p>
+<h2>가해자가 먼저 지울 수도 있어요</h2>
+<p>가해자가 스스로 게시글을 삭제하거나 계정을 탈퇴하면 상황이 더 복잡해져요. 플랫폼의 보존 정책과 수사기관의 자료 확보 시점에 따라 개인정보나 접속기록 확인이 어려워질 수 있거든요.</p>
+<p>통신사의 통신사실확인자료 보존 기간은 통상 3개월~12개월이에요. 이 기간 안에 수사기관이 자료를 확보하지 못하면 가해자 특정 자체가 어려워질 수 있어요. 조기 고소 접수를 권장하는 이유도 이 때문이에요.</p>
+<h2>내가 먼저 보존해야 하는 것들</h2>
+<p>"신고 전에, 아니 신고와 동시에" 직접 증거를 남겨두는 게 중요해요. 법정에서 효력이 인정되려면 원본성과 연속성이 유지되어야 하기 때문에, 보존 방법도 꼼꼼하게 챙겨야 해요.</p>
+<p>최소한 이것은 남겨두세요.</p>
+<ul><li><strong>URL</strong> — 게시물의 직접 링크</li><li><strong>작성 일시</strong> — 화면에 날짜·시각이 보이게 캡처</li><li><strong>작성자 닉네임</strong> 및 <strong>플랫폼명</strong></li><li>가능하면 <strong>화면 녹화</strong>까지 — 캡처보다 위변조 논란이 줄어들어요</li></ul>
+<p>단순 캡처는 위변조 가능성이 있어 증거 능력이 약할 수 있어요. URL·작성자 프로필·댓글 전체 맥락을 담은 영상 녹화나 웹 페이지 저장 방식이 더 확실한 증거가 돼요.</p>
+<h2>오늘 할 수 있는 것</h2>
+<p>증거를 남기는 일이 고통스러운 건 그 화면을 또 봐야 하기 때문이에요. 빠르게 저장하고 닫을 수 있는 방법을 찾아두는 게 중요해요. 신고 버튼을 누르기 전에, URL과 날짜가 보이는 전체 화면을 먼저 저장하는 습관을 들여보세요. 작은 한 단계가 나중에 큰 차이를 만들어요.</p>
+<blockquote>이 글은 일반 정보예요. 구체적인 일은 변호사와 상의하세요. 많이 힘들 땐 자살예방상담 109(24시간)가 있어요.</blockquote>
+<h2>참고 자료</h2>
+<ul><li><a href="https://gounlaw.com/legal-information/legal-information/56">SNS명예훼손 형사고소 절차 및 증거 수집 — 고운법률사무소</a></li><li><a href="https://www.help-me.kr/blog/article/cyber-libel-faq/">온라인 명예훼손 대응법 총정리 — 헬프미 법률사무소</a></li><li><a href="https://www.daeryunlaw-detective.com/lawInfo_new/2164">사이버명예훼손죄 구성요건·처벌기준·고소 절차 — 대륜법률사무소</a></li><li><a href="https://lawform.io/magazine/863">사이버 명예훼손 고소 방법·성립 요건 — lawform.io</a></li><li><a href="https://guiasinmediatas.com/sns-%EB%AA%85%EC%98%88%ED%9B%BC%EC%86%90-%EA%B2%8C%EC%8B%9C%EB%AC%BC-%EC%A6%9D%EA%B1%B0-%EC%88%98%EC%A7%91-sns-%EB%AA%85%EC%98%88%ED%9B%BC%EC%86%90-%EC%A6%9D%EA%B1%B0-%EB%B3%B4%EC%A0%84-%EB%B0%A9">SNS 명예훼손 게시물 증거 수집 5가지 방법</a></li></ul>
+</article>
+</div>
+<footer class="site-footer">인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 글은 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)</footer>
+</body>
+</html>

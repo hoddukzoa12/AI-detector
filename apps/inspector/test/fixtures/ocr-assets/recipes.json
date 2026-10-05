@@ -1,0 +1,11 @@
+[
+  {"id":"korean","file":"korean.png","text":"불법 온라인 카지노\n가입하고 배팅 보너스 받으세요","label":"illegal_ad","status":"readable","background":"#172554","foreground":"#ffffff"},
+  {"id":"english","file":"english.png","text":"ILLEGAL ONLINE CASINO\nJOIN NOW - BETTING BONUS","label":"illegal_ad","status":"readable","background":"#7f1d1d","foreground":"#ffffff"},
+  {"id":"logo","file":"logo.png","text":"시민 도서관\nCIVIC LIBRARY","label":"non_ad","status":"readable","background":"#f0fdf4","foreground":"#14532d"},
+  {"id":"cover","file":"cover.png","text":"한국의 나무\n자연 관찰 도감","label":"non_ad","status":"readable","background":"#ecfccb","foreground":"#365314"},
+  {"id":"general","file":"general.png","text":"동네 빵집\n오늘의 식빵 20% 할인","label":"general_ad","status":"readable","background":"#fef3c7","foreground":"#78350f"},
+  {"id":"article","file":"article.png","text":"뉴스: 불법 카지노 광고 단속\n경찰 수사 결과 보도","label":"non_ad","status":"readable","background":"#f1f5f9","foreground":"#0f172a"},
+  {"id":"notice","file":"notice.png","text":"도박 피해 신고 안내\n상담 전화 1336","label":"non_ad","status":"readable","background":"#eff6ff","foreground":"#1e3a8a"},
+  {"id":"no-text","file":"no-text.png","text":"","label":"unjudged","status":"no_text","background":"#0f766e","foreground":"#facc15"},
+  {"id":"unreadable","file":"unreadable.png","text":"읽기 어려운 합성 배너","label":"unjudged","status":"unreadable","background":"#ffffff","foreground":"#eeeeee","fontSize":4,"blur":3}
+]

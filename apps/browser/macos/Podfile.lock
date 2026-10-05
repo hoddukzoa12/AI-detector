@@ -1,0 +1,28 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+  - multi_window_macos (0.0.1):
+    - FlutterMacOS
+  - window_manager_plus (0.0.1):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - multi_window_macos (from `Flutter/ephemeral/.symlinks/plugins/multi_window_macos/macos`)
+  - window_manager_plus (from `Flutter/ephemeral/.symlinks/plugins/window_manager_plus/macos`)
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  multi_window_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/multi_window_macos/macos
+  window_manager_plus:
+    :path: Flutter/ephemeral/.symlinks/plugins/window_manager_plus/macos
+
+SPEC CHECKSUMS:
+  FlutterMacOS: d0db08ddef1a9af05a5ec4b724367152bb0500b1
+  multi_window_macos: f9662ce418975e26ee0bdf2fbad032c146df7c59
+  window_manager_plus: e29fcf45a372b5312ad381ce5596a007994537ac
+
+PODFILE CHECKSUM: ae82f968703fea5cc0522106f4e945822e3af027
+
+COCOAPODS: 1.16.2

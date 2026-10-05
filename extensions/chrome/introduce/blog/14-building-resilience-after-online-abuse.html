@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="악플 뒤에도 다시 일어설 수 있어요 — 회복탄력성에 대해 — 인포커터 블로그" />
+<meta property="og:description" content="악플 이후 "내가 잘못한 걸까"라는 생각이 든다면 — 그건 약한 게 아니에요. 회복탄력성은 타고나는 게 아니라, 조금씩 만들어가는 거거든요." />
+<meta property="og:image" content="../assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="악플 뒤에도 다시 일어설 수 있어요 — 회복탄력성에 대해 — 인포커터 블로그" />
+<meta name="twitter:description" content="악플 이후 "내가 잘못한 걸까"라는 생각이 든다면 — 그건 약한 게 아니에요. 회복탄력성은 타고나는 게 아니라, 조금씩 만들어가는 거거든요." />
+<meta name="twitter:image" content="../assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>악플 뒤에도 다시 일어설 수 있어요 — 회복탄력성에 대해 — 인포커터 블로그</title>
+<meta name="description" content="악플 이후 "내가 잘못한 걸까"라는 생각이 든다면 — 그건 약한 게 아니에요. 회복탄력성은 타고나는 게 아니라, 조금씩 만들어가는 거거든요." />
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#f5f5f5;--ink:#141414;--muted:#787878;--dim:#a3a3a3;--line:#e5e5e5;--brand:#0a6cff;--brand-dark:#084fbf;--brand-tint:#f6f9ff;--brand-soft:#e6efff;--maxw:720px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--brand)}
+.top{padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{font-size:14px;color:var(--muted);text-decoration:none}
+article{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.32;letter-spacing:-.02em;margin:.2em 0 .3em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px;font-weight:600}
+h2{font-size:21px;margin:1.6em 0 .4em;letter-spacing:-.01em}
+p{margin:.7em 0}
+blockquote{margin:1em 0;padding:12px 18px;background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:8px;color:#374151;font-size:15px}
+ul{padding-left:1.2em}li{margin:.3em 0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.refs a{word-break:break-all}
+footer{padding:28px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:24px}
+/* index */
+.hero{padding:56px 0 28px;text-align:center}
+.hero h1{font-size:30px}.hero p{color:var(--muted);max-width:30em;margin:.4em auto}
+.group{padding:26px 0;border-top:1px solid var(--line)}
+.group h2{font-size:18px;margin:0 0 14px}
+.cardlist{display:grid;gap:12px}
+.post{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .12s ease,background .12s ease}
+.post:hover{border-color:var(--brand);background:var(--brand-tint)}
+.post-thumb{flex:0 0 auto;width:104px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.post-body{flex:1 1 auto;min-width:0}
+.post b{display:block;font-size:16px;margin-bottom:4px}
+.post span{color:var(--muted);font-size:14px}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:6px 0 20px}
+.body-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:14px 0 24px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:20px}.nav a{color:var(--muted);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+.site-footer{border-top:1px solid var(--line);padding:32px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="bar"><a class="brand" href="../index.html">인포커터</a><nav class="nav"><a href="../index.html">소개</a><a href="index.html">블로그</a><a href="../faq.html">FAQ</a><a href="../index.html#start">시작하기</a></nav></div></header>
+<div class="wrap">
+<p style="margin:22px 0 0"><a href="index.html" style="font-size:14px;color:var(--muted)">← 블로그 목록</a></p>
+<article>
+<h1>악플 뒤에도 다시 일어설 수 있어요 — 회복탄력성에 대해</h1>
+<div class="meta">2026-05-30 · <span class="tag">회복</span><span class="tag">정신건강</span></div>
+<img class="thumb" src="images/14-building-resilience-after-online-abuse.png" alt="악플 뒤에도 다시 일어설 수 있어요 — 회복탄력성에 대해" />
+<img class="body-image" src="images/body/14-building-resilience-after-online-abuse.png" alt="본문 이미지" loading="lazy" />
+<p>"왜 나만 이런 일이 생기지." 악플을 받고 나면 이런 생각이 들죠. 이제 뭔가를 올리려다 손가락이 멈칫하고, 알림이 울릴 때마다 가슴이 철렁 내려앉아요. 그건 당신이 약한 게 아니에요. 고통에 자연스럽게 반응하는 거예요.</p>
+<h2>회복탄력성은 성격이 아니에요</h2>
+<p>심리학에서 말하는 회복탄력성(resilience)은 어려움에서 적응하고 다시 일어서는 능력이에요. 그런데 중요한 건 — 이게 타고난 성격이 아니라는 거예요. 환경과 관계 속에서 발달하는 능력이고, 조금씩 키울 수 있어요. 참사람의 심리 자료에 따르면 회복탄력성은 나이·성별·문화에 따라 다르게 나타나는 역동적 특성이고, 수동적으로 견디는 게 아니라 자신의 강점을 써서 능동적으로 만들어가는 과정이에요.</p>
+<p>악플 이후 어떤 사람은 빠르게 털고 일어서고, 어떤 사람은 오래 고통받는 이유가 "강한 사람" vs "약한 사람"의 차이가 아니에요. 회복에 필요한 조건들이 각자 다르게 갖춰져 있을 뿐이에요.</p>
+<h2>자책부터 내려놓아야 해요</h2>
+<p>가장 먼저 내려놓아야 할 게 자책이에요. 악플은 대부분 피해자의 잘못과 무관해요. 로톡의 분석에 따르면 악플을 다는 사람 상당수가 "큰 생각 없이" 누르거나 집단에 편승하는 경우가 많아요. 그러니까 그 말이 당신에 대한 정확한 평가가 아닌 경우가 훨씬 많아요.</p>
+<p>자책은 회복을 늦춰요. "이 상황에 내가 어떻게 반응할지"를 고르는 것 — 그게 지금 실제로 할 수 있는 일이에요.</p>
+<h2>회복을 돕는 것들</h2>
+<p>회복탄력성 연구들이 반복해서 강조하는 게 있어요.</p>
+<ul><li><strong>관계</strong>: 감정을 솔직하게 나눌 수 있는 사람이 곁에 있는 것. 혼자 삭이지 않아도 돼요.</li><li><strong>루틴</strong>: 수면, 식사, 가벼운 운동 — 기초 리듬을 지키는 것만으로도 심리적 안정의 바탕이 돼요.</li><li><strong>전문 도움</strong>: 상담을 받으면 감정 조절, 인지 재구성, 긍정적 사고 훈련을 전문적으로 배울 수 있어요.</li><li><strong>노출 줄이기</strong>: 악플이 있는 화면에 계속 노출되면 회복이 어려워요. 그 환경에서 먼저 나오는 게 중요해요.</li></ul>
+<p>헬스이프헤럴드의 자료에 따르면 회복탄력성을 높이려면 감정을 억누르지 않고 표현하고, 신뢰할 수 있는 사람의 지지를 받고, 작은 목표를 달성하며 자아효능감을 키우는 것이 효과적이에요.</p>
+<h2>오늘 할 수 있는 가장 작은 것</h2>
+<p>회복의 첫 걸음은 그 공간에서 잠깐 물러나는 거예요. 멀리 달아나는 게 아니라, 지금 내가 쉴 수 있는 자리를 만드는 거예요.</p>
+<p>치유가 필요하다면 정신건강복지센터(1577-0199) 또는 청소년상담복지센터(1388)의 전문 상담을 이용하세요.</p>
+<p>당신이 조금씩 일어서고 있다면, 그게 이미 충분히 대단한 거예요.</p>
+<blockquote>이 글은 일반 정보예요. 구체적인 일은 전문가(상담·변호사)와 상의하세요. 많이 힘들 땐 자살예방상담 109(24시간)가 있어요.</blockquote>
+<h2>참고 자료</h2>
+<ul><li><a href="https://www.chamsaram.org/bbs3.html?html=cham_365.html&mode=view&uid=577">행복한 삶의 지름길 — 심리적 회복탄력성, 참사람</a></li><li><a href="https://www.healthlifeherald.com/news/articleView.html?idxno=1349">심리적 회복탄력성 키우는 방법, 헬스이프헤럴드</a></li><li><a href="https://www.maum-sopoong.or.kr/infor_story/55970">회복탄력성 키우는 방법, 마음소풍</a></li><li><a href="https://www.lawtalk.co.kr/posts/102013">악플로 인한 정신적 고통, 어떻게 대응하면 좋을까, 로톡</a></li></ul>
+</article>
+</div>
+<footer class="site-footer">인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 글은 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)</footer>
+</body>
+</html>

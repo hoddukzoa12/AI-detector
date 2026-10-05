@@ -1,0 +1,123 @@
+{
+  "_readme" : "design-system-studio 의 토큰셋 스냅샷이다. 이 파일이 Dart 테마의 원본이며, 고친 뒤 tool/generate_theme_tokens.dart 를 돌린다. 정본 편집은 design-system-studio 앱에서 하고 `design-system-studio tokens export <set> --format json` 으로 이 파일을 덮어쓴다. 스냅샷을 커밋하는 이유는 그 CLI 가 이 맥에만 있는 macOS 앱이어서, 없는 환경(CI·다른 기여자)에서도 빌드와 --check 가 돌아야 하기 때문이다.",
+  "_source" : "design-system-studio",
+  "_capturedAt" : "2026-08-04",
+  "id" : "infocutter-app",
+  "name" : "Infocutter 앱",
+  "schemaVersion" : 1,
+  "tokens" : [
+    {
+      "name" : "primary",
+      "type" : "color",
+      "value" : "#0F766E",
+      "darkValue" : "#5EEAD4"
+    },
+    {
+      "name" : "accent",
+      "type" : "color",
+      "value" : "#0D9488",
+      "darkValue" : "#2DD4BF"
+    },
+    {
+      "name" : "on-primary",
+      "type" : "color",
+      "value" : "#FFFFFF",
+      "darkValue" : "#0D1117"
+    },
+    {
+      "name" : "secondary",
+      "type" : "color",
+      "value" : "#0284C7",
+      "darkValue" : "#7DD3FC"
+    },
+    {
+      "name" : "base",
+      "type" : "color",
+      "value" : "#F8FAFC",
+      "darkValue" : "#0D1117"
+    },
+    {
+      "name" : "surface",
+      "type" : "color",
+      "value" : "#FFFFFF",
+      "darkValue" : "#161B22"
+    },
+    {
+      "name" : "surface-high",
+      "type" : "color",
+      "value" : "#F1F5F9",
+      "darkValue" : "#21262D"
+    },
+    {
+      "name" : "input-fill",
+      "type" : "color",
+      "value" : "#FFFFFF",
+      "darkValue" : "#0F141A"
+    },
+    {
+      "name" : "outline",
+      "type" : "color",
+      "value" : "#D0D7DE",
+      "darkValue" : "#30363D"
+    },
+    {
+      "name" : "text",
+      "type" : "color",
+      "value" : "#111827",
+      "darkValue" : "#E6EDF3"
+    },
+    {
+      "name" : "muted-text",
+      "type" : "color",
+      "value" : "#64748B",
+      "darkValue" : "#8B949E"
+    },
+    {
+      "name" : "tooltip-background",
+      "type" : "color",
+      "value" : "#111827",
+      "darkValue" : "#010409"
+    },
+    {
+      "name" : "error",
+      "type" : "color",
+      "value" : "#DC2626",
+      "darkValue" : "#F87171"
+    },
+    {
+      "name" : "space-sm",
+      "type" : "spacing",
+      "value" : "8px"
+    },
+    {
+      "name" : "space-md",
+      "type" : "spacing",
+      "value" : "16px"
+    },
+    {
+      "name" : "space-lg",
+      "type" : "spacing",
+      "value" : "24px"
+    },
+    {
+      "name" : "space-xl",
+      "type" : "spacing",
+      "value" : "32px"
+    },
+    {
+      "name" : "radius-sm",
+      "type" : "radius",
+      "value" : "6px"
+    },
+    {
+      "name" : "radius-md",
+      "type" : "radius",
+      "value" : "8px"
+    },
+    {
+      "name" : "radius-lg",
+      "type" : "radius",
+      "value" : "16px"
+    }
+  ]
+}

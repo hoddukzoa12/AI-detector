@@ -1,0 +1,41 @@
+{
+  "name": "infocutter",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Name and alias masking extension with evidence PDF capture.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "pipe:clean": "rm -rf dist",
+    "pipe:clean-all": "rm -rf dist dist-package packages-dist packages/*/dist",
+    "pipe:packages": "tsc -p tsconfig.packages.json && node ./scripts/sync-packages-dist.mjs",
+    "pipe:doctor": "node ./scripts/doctor.mjs",
+    "pipe:build": "npm run pipe:clean && npm run pipe:packages && tsc -p tsconfig.json && node ./scripts/build.mjs",
+    "pipe:dev": "npm run pipe:build && node ./scripts/dev.mjs",
+    "pipe:templates": "node ./scripts/templates-server.mjs",
+    "pipe:templates-public": "INFOCUTTER_TEMPLATE_HOST=0.0.0.0 node ./scripts/templates-server.mjs",
+    "pipe:watch": "node ./scripts/watch.mjs",
+    "pipe:rebuild": "npm run pipe:clean-all && npm run pipe:build && npm run pipe:doctor",
+    "pipe:package": "npm run pipe:build && node ./scripts/package.mjs",
+    "pipe:typecheck": "tsc -p tsconfig.json --noEmit",
+    "pipe:lint": "eslint .",
+    "pipe:test": "npm run pipe:build && node --test 'dist/tests/*.js'",
+    "pipe:check": "npm run pipe:lint && npm run pipe:typecheck && npm run pipe:test",
+    "pipe:rc": "npm run pipe:rebuild && npm run pipe:check && npm run pipe:package",
+    "pipe:reset": "npm run pipe:clean-all",
+    "pipe:safari": "node ./scripts/build-safari.mjs",
+    "pipe:safari-archive": "node ./scripts/archive-safari.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@types/chrome": "^0.0.319",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "@vibecode/ext-build": "file:../../packages/ext-build"
+  }
+}

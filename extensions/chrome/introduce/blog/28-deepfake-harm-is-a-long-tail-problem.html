@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="딥페이크 피해는 한 번 삭제로 끝나지 않아요 — 인포커터 블로그" />
+<meta property="og:description" content="디지털 성범죄 피해지원은 삭제 한 번으로 끝나지 않아요. 재유포라는 긴 꼬리, 그리고 악플도 닮은 구조라는 이야기예요." />
+<meta property="og:image" content="../assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="딥페이크 피해는 한 번 삭제로 끝나지 않아요 — 인포커터 블로그" />
+<meta name="twitter:description" content="디지털 성범죄 피해지원은 삭제 한 번으로 끝나지 않아요. 재유포라는 긴 꼬리, 그리고 악플도 닮은 구조라는 이야기예요." />
+<meta name="twitter:image" content="../assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>딥페이크 피해는 한 번 삭제로 끝나지 않아요 — 인포커터 블로그</title>
+<meta name="description" content="디지털 성범죄 피해지원은 삭제 한 번으로 끝나지 않아요. 재유포라는 긴 꼬리, 그리고 악플도 닮은 구조라는 이야기예요." />
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#f5f5f5;--ink:#141414;--muted:#787878;--dim:#a3a3a3;--line:#e5e5e5;--brand:#0a6cff;--brand-dark:#084fbf;--brand-tint:#f6f9ff;--brand-soft:#e6efff;--maxw:720px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--brand)}
+.top{padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{font-size:14px;color:var(--muted);text-decoration:none}
+article{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.32;letter-spacing:-.02em;margin:.2em 0 .3em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px;font-weight:600}
+h2{font-size:21px;margin:1.6em 0 .4em;letter-spacing:-.01em}
+p{margin:.7em 0}
+blockquote{margin:1em 0;padding:12px 18px;background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:8px;color:#374151;font-size:15px}
+ul{padding-left:1.2em}li{margin:.3em 0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.refs a{word-break:break-all}
+footer{padding:28px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:24px}
+/* index */
+.hero{padding:56px 0 28px;text-align:center}
+.hero h1{font-size:30px}.hero p{color:var(--muted);max-width:30em;margin:.4em auto}
+.group{padding:26px 0;border-top:1px solid var(--line)}
+.group h2{font-size:18px;margin:0 0 14px}
+.cardlist{display:grid;gap:12px}
+.post{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .12s ease,background .12s ease}
+.post:hover{border-color:var(--brand);background:var(--brand-tint)}
+.post-thumb{flex:0 0 auto;width:104px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.post-body{flex:1 1 auto;min-width:0}
+.post b{display:block;font-size:16px;margin-bottom:4px}
+.post span{color:var(--muted);font-size:14px}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:6px 0 20px}
+.body-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:14px 0 24px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:20px}.nav a{color:var(--muted);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+.site-footer{border-top:1px solid var(--line);padding:32px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="bar"><a class="brand" href="../index.html">인포커터</a><nav class="nav"><a href="../index.html">소개</a><a href="index.html">블로그</a><a href="../faq.html">FAQ</a><a href="../index.html#start">시작하기</a></nav></div></header>
+<div class="wrap">
+<p style="margin:22px 0 0"><a href="index.html" style="font-size:14px;color:var(--muted)">← 블로그 목록</a></p>
+<article>
+<h1>딥페이크 피해는 한 번 삭제로 끝나지 않아요</h1>
+<div class="meta">2026-05-30 · <span class="tag">딥페이크</span><span class="tag">피해지원</span></div>
+<img class="thumb" src="images/28-deepfake-harm-is-a-long-tail-problem.png" alt="딥페이크 피해는 한 번 삭제로 끝나지 않아요" />
+<img class="body-image" src="images/body/28-deepfake-harm-is-a-long-tail-problem.png" alt="본문 이미지" loading="lazy" />
+<p>내 얼굴이 합성된 이미지가 떠돈다는 걸 알게 되면, 그 충격은 말로 다 못 해요. 그런데 더 지치게 만드는 건 따로 있어요. 지웠다고 안심한 순간, 다른 사이트에 또 올라오는 거예요. 끝난 줄 알았는데 안 끝나는 것. 그게 제일 힘들죠.</p>
+<h2>한 번 삭제로 안 끝나는 이유</h2>
+<p>디지털 피해는 물리적인 사건이랑 달라요. 복제되거든요. 한 번 올라온 이미지나 영상은 누군가 저장하고, 다시 올리고, 편집해서 또 퍼뜨릴 수 있어요. 그래서 피해 지원도 "한 번 신고하고 끝"이 아니라, 계속 추적하고 삭제 요청을 반복하는 일이 돼요.</p>
+<p>2025년 한 해 동안 중앙디지털성범죄피해자지원센터가 도운 피해자가 1만 명이 넘어요. 그중에서도 삭제지원이 가장 큰 비중을 차지했어요. 신규 피해자는 줄었는데 '계속 지원받는' 피해자는 늘었고요. 한 번의 사건이 아니라 긴 꼬리를 가진 문제라는 뜻이에요.</p>
+<h2>악플도 비슷한 긴 꼬리를 가져요</h2>
+<p>딥페이크랑 악플은 다른 범주의 피해지만, 닮은 점이 있어요. 온라인에 남고, 복제되고, 다시 발견된다는 거예요.</p>
+<p>악플도 그래요. 누가 캡처해 단톡방에 공유하고, 커뮤니티에 다시 올라오고, 검색 결과에 남고, 지워진 글이 다른 데서 인용되고, 새 댓글이 달리면서 피해가 또 갱신돼요. 그래서 피해자는 "이제 끝났다"고 느끼기가 어려워요. 언제 다시 튀어나올지 모르니까요.</p>
+<h2>그래서 오늘 할 수 있는 건</h2>
+<p>매일 직접 검색하고, 직접 확인하고, 직접 캡처하는 방식은 오래 못 버텨요. 마음에도, 시간에도 너무 큰 비용이 드니까요.</p>
+<p>그러니 혼자 다 짊어지지 마세요. 딥페이크 피해는 중앙디지털성범죄피해자지원센터(d4u.stop.or.kr) 같은 곳이 상담과 삭제지원을 함께 해줘요. 다시 볼 때 받는 충격을 줄이는 것과 필요할 때 증거를 놓치지 않는 것, 그 둘을 혼자 한꺼번에 감당하려 애쓰지 않아도 돼요.</p>
+<blockquote>이 글은 일반 정보이며 법률·의료 자문이 아니에요. 구체적인 사안은 전문가와 상의하세요. 많이 힘들 땐 자살예방상담 109(24시간)가 있어요.</blockquote>
+<h2>참고 자료</h2>
+<ul><li><a href="https://www.asiae.co.kr/en/article/2026041609471491142">Asia Business Daily — 2025 Digital Sex Crime Victim Support Report 관련 보도</a></li><li><a href="https://d4u.stop.or.kr/">중앙디지털성범죄피해자지원센터</a></li></ul>
+</article>
+</div>
+<footer class="site-footer">인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 글은 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)</footer>
+</body>
+</html>

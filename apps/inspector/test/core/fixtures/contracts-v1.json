@@ -1,0 +1,16 @@
+{
+  "result": {
+    "meta": { "topic": "TOPIC", "entry_url": "https://example.org/?archive=1", "started_at": "2026-10-04T00:00:00Z", "finished_at": "2026-10-04T00:00:01Z", "elapsed_sec": 1 },
+    "findings": [{ "id": "f1", "url": "https://example.org/?archive=1", "is_violation": true, "location": "#원문", "evidence_text": "😀 원문\n보존", "technique": "JAMO" }]
+  },
+  "status": {
+    "schemaVersion": 1,
+    "run": { "runId": "v1-fixture", "entryUrl": "https://example.org/?archive=1", "startedAt": "2026-10-04T00:00:00Z", "state": "running", "finishedAt": null, "elapsedSec": 0, "aiEnabled": false, "model": null,
+      "counts": { "discoveredPages": 1, "scannedPages": 0, "failedPages": 0, "skippedPages": 0, "pendingPages": 1, "confirmedFindings": 0, "reviewCandidates": 0 }, "activeUrls": [], "errors": [] },
+    "scope": { "hostname": "example.org", "framePolicy": "embedded", "skipped": [], "unvisitedUrls": [] },
+    "files": { "resultPath": null, "reviewPath": null, "findingDetailsPath": null, "evidenceDir": null, "resultSha256": null },
+    "resultSaved": false
+  },
+  "review": { "schemaVersion": 1, "runId": "v1-fixture", "candidates": [] },
+  "details": { "schemaVersion": 1, "runId": "v1-fixture", "details": [{ "findingId": "f1", "candidateId": "c1", "decisionSource": "local", "ruleIds": ["legacy-rule"], "ai": null, "evidence": { "snapshotId": "s1", "path": null, "sha256": null } }] }
+}

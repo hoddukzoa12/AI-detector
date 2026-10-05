@@ -1,0 +1,15 @@
+services:
+  infocutter-templates:
+    build:
+      context: .
+      dockerfile: Dockerfile.templates
+    ports:
+      - "41800:41800"
+    environment:
+      INFOCUTTER_TEMPLATE_HOST: "0.0.0.0"
+      INFOCUTTER_TEMPLATE_PORT: "41800"
+      INFOCUTTER_TEMPLATE_DIR: "/data/templates"
+      INFOCUTTER_TEMPLATE_CORS_ORIGIN: "*"
+      INFOCUTTER_TEMPLATE_TOKEN: ""
+    volumes:
+      - ./templates:/data/templates

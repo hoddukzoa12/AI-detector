@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="SNS는 끊는 게 아니라, 안전장치가 필요해요 — 인포커터 블로그" />
+<meta property="og:description" content="2025년 Pew 조사를 보면 SNS는 좋은 연결과 해로운 노출이 한 화면에 섞여 있어요. 그래서 필요한 건 단절이 아니라 보호장치예요." />
+<meta property="og:image" content="../assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SNS는 끊는 게 아니라, 안전장치가 필요해요 — 인포커터 블로그" />
+<meta name="twitter:description" content="2025년 Pew 조사를 보면 SNS는 좋은 연결과 해로운 노출이 한 화면에 섞여 있어요. 그래서 필요한 건 단절이 아니라 보호장치예요." />
+<meta name="twitter:image" content="../assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>SNS는 끊는 게 아니라, 안전장치가 필요해요 — 인포커터 블로그</title>
+<meta name="description" content="2025년 Pew 조사를 보면 SNS는 좋은 연결과 해로운 노출이 한 화면에 섞여 있어요. 그래서 필요한 건 단절이 아니라 보호장치예요." />
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#f5f5f5;--ink:#141414;--muted:#787878;--dim:#a3a3a3;--line:#e5e5e5;--brand:#0a6cff;--brand-dark:#084fbf;--brand-tint:#f6f9ff;--brand-soft:#e6efff;--maxw:720px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--brand)}
+.top{padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{font-size:14px;color:var(--muted);text-decoration:none}
+article{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.32;letter-spacing:-.02em;margin:.2em 0 .3em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px;font-weight:600}
+h2{font-size:21px;margin:1.6em 0 .4em;letter-spacing:-.01em}
+p{margin:.7em 0}
+blockquote{margin:1em 0;padding:12px 18px;background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:8px;color:#374151;font-size:15px}
+ul{padding-left:1.2em}li{margin:.3em 0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.refs a{word-break:break-all}
+footer{padding:28px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:24px}
+/* index */
+.hero{padding:56px 0 28px;text-align:center}
+.hero h1{font-size:30px}.hero p{color:var(--muted);max-width:30em;margin:.4em auto}
+.group{padding:26px 0;border-top:1px solid var(--line)}
+.group h2{font-size:18px;margin:0 0 14px}
+.cardlist{display:grid;gap:12px}
+.post{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .12s ease,background .12s ease}
+.post:hover{border-color:var(--brand);background:var(--brand-tint)}
+.post-thumb{flex:0 0 auto;width:104px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.post-body{flex:1 1 auto;min-width:0}
+.post b{display:block;font-size:16px;margin-bottom:4px}
+.post span{color:var(--muted);font-size:14px}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:6px 0 20px}
+.body-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:14px 0 24px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:20px}.nav a{color:var(--muted);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+.site-footer{border-top:1px solid var(--line);padding:32px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="bar"><a class="brand" href="../index.html">인포커터</a><nav class="nav"><a href="../index.html">소개</a><a href="index.html">블로그</a><a href="../faq.html">FAQ</a><a href="../index.html#start">시작하기</a></nav></div></header>
+<div class="wrap">
+<p style="margin:22px 0 0"><a href="index.html" style="font-size:14px;color:var(--muted)">← 블로그 목록</a></p>
+<article>
+<h1>SNS는 끊는 게 아니라, 안전장치가 필요해요</h1>
+<div class="meta">2026-05-30 · <span class="tag">연구</span><span class="tag">마음챙김</span></div>
+<img class="thumb" src="images/25-social-media-is-not-only-bad-but-needs-guardrails.png" alt="SNS는 끊는 게 아니라, 안전장치가 필요해요" />
+<img class="body-image" src="images/body/25-social-media-is-not-only-bad-but-needs-guardrails.png" alt="본문 이미지" loading="lazy" />
+<p>"SNS 좀 그만해"라는 말, 들어본 적 있죠? 힘들어하는 걸 보면 주변에서 쉽게 하는 말이에요. 그런데 막상 끊으려고 하면 친구도, 일도, 정보도 다 거기 묶여 있어서 잘 안 돼요. 당신이 의지가 없어서가 아니에요.</p>
+<h2>SNS는 좋은 것과 해로운 게 한 화면에 섞여 있어요</h2>
+<p>2025년 Pew Research Center 조사에서, 미국 청소년 대다수가 SNS 덕분에 친구들과 더 연결된다고 답했어요. 동시에 일부는 SNS가 자기 정신건강에 해롭다고도 했고요. 같은 공간이 누군가에겐 연결의 통로고, 누군가에겐 상처의 입구인 거예요.</p>
+<p>특히 여학생 쪽에서 정신건강이나 수면에 부정적이라는 응답이 더 많았어요. 같은 플랫폼을 써도 외모 평가나 조롱, 악성 댓글에 더 많이 노출되는 사람이 따로 있다는 뜻이에요.</p>
+<h2>"그냥 하지 마"가 답이 안 되는 이유</h2>
+<p>청소년, 창작자, 프리랜서, 자영업자, 공인에게 SNS는 단순한 놀이가 아니에요. 관계도, 일도, 홍보도 다 얽혀 있죠. 그러니 "그냥 끊어"는 현실적인 조언이 못 돼요. 좋은 연결까지 통째로 잘라내야 하니까요.</p>
+<p>필요한 건 전부 끊는 게 아니라, 나를 반복해서 무너뜨리는 부분만 덜 보이게 하는 거예요. 음악은 켜두고 소음만 줄이는 노이즈 캔슬링처럼요.</p>
+<h2>그래서 오늘 할 수 있는 건</h2>
+<p>선택지가 꼭 둘만 있는 건 아니에요. 전부 끊으면 좋은 것까지 사라지고, 무방비로 쓰면 악플까지 계속 들어와요. 그 사이에 '필요한 건 남기고 해로운 노출만 줄이는' 길이 있어요.</p>
+<p>오늘은 작은 것부터요. 나를 자꾸 다치게 하는 계정이나 키워드 알림을 꺼두고, 보는 시간에 경계를 그어두세요. 당신을 더 강하게 만들라는 게 아니에요. 덜 다치도록 환경을 바꾸는 거예요.</p>
+<blockquote>이 글은 일반 정보예요. 구체적인 법률·의료 판단은 전문가와 상의하세요. 많이 힘들 땐 자살예방상담 109(24시간)가 있어요.</blockquote>
+<h2>참고 자료</h2>
+<ul><li><a href="https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/">Pew Research Center — Social Media and Teens' Mental Health, 2025</a></li></ul>
+</article>
+</div>
+<footer class="site-footer">인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 글은 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)</footer>
+</body>
+</html>

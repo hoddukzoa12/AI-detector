@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="캡처 한 장, 법원에서도 통할까 — 동일성·무결성이 뭔지 알면 달라져요 — 인포커터 블로그" />
+<meta property="og:description" content="스크린샷이 법정에서 효력을 갖추려면 '동일성'과 '무결성'을 증명해야 해요. 해시값이 그 핵심이고, 단순 캡처가 약한 이유도 여기에 있어요." />
+<meta property="og:image" content="../assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="캡처 한 장, 법원에서도 통할까 — 동일성·무결성이 뭔지 알면 달라져요 — 인포커터 블로그" />
+<meta name="twitter:description" content="스크린샷이 법정에서 효력을 갖추려면 '동일성'과 '무결성'을 증명해야 해요. 해시값이 그 핵심이고, 단순 캡처가 약한 이유도 여기에 있어요." />
+<meta name="twitter:image" content="../assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>캡처 한 장, 법원에서도 통할까 — 동일성·무결성이 뭔지 알면 달라져요 — 인포커터 블로그</title>
+<meta name="description" content="스크린샷이 법정에서 효력을 갖추려면 '동일성'과 '무결성'을 증명해야 해요. 해시값이 그 핵심이고, 단순 캡처가 약한 이유도 여기에 있어요." />
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#f5f5f5;--ink:#141414;--muted:#787878;--dim:#a3a3a3;--line:#e5e5e5;--brand:#0a6cff;--brand-dark:#084fbf;--brand-tint:#f6f9ff;--brand-soft:#e6efff;--maxw:720px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--brand)}
+.top{padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{font-size:14px;color:var(--muted);text-decoration:none}
+article{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.32;letter-spacing:-.02em;margin:.2em 0 .3em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px;font-weight:600}
+h2{font-size:21px;margin:1.6em 0 .4em;letter-spacing:-.01em}
+p{margin:.7em 0}
+blockquote{margin:1em 0;padding:12px 18px;background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:8px;color:#374151;font-size:15px}
+ul{padding-left:1.2em}li{margin:.3em 0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.refs a{word-break:break-all}
+footer{padding:28px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:24px}
+/* index */
+.hero{padding:56px 0 28px;text-align:center}
+.hero h1{font-size:30px}.hero p{color:var(--muted);max-width:30em;margin:.4em auto}
+.group{padding:26px 0;border-top:1px solid var(--line)}
+.group h2{font-size:18px;margin:0 0 14px}
+.cardlist{display:grid;gap:12px}
+.post{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .12s ease,background .12s ease}
+.post:hover{border-color:var(--brand);background:var(--brand-tint)}
+.post-thumb{flex:0 0 auto;width:104px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.post-body{flex:1 1 auto;min-width:0}
+.post b{display:block;font-size:16px;margin-bottom:4px}
+.post span{color:var(--muted);font-size:14px}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:6px 0 20px}
+.body-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:14px 0 24px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:20px}.nav a{color:var(--muted);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+.site-footer{border-top:1px solid var(--line);padding:32px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="bar"><a class="brand" href="../index.html">인포커터</a><nav class="nav"><a href="../index.html">소개</a><a href="index.html">블로그</a><a href="../faq.html">FAQ</a><a href="../index.html#start">시작하기</a></nav></div></header>
+<div class="wrap">
+<p style="margin:22px 0 0"><a href="index.html" style="font-size:14px;color:var(--muted)">← 블로그 목록</a></p>
+<article>
+<h1>캡처 한 장, 법원에서도 통할까 — 동일성·무결성이 뭔지 알면 달라져요</h1>
+<div class="meta">2026-05-30 · <span class="tag">증거</span></div>
+<img class="thumb" src="images/03-digital-evidence-integrity-what-courts-look-for.png" alt="캡처 한 장, 법원에서도 통할까 — 동일성·무결성이 뭔지 알면 달라져요" />
+<img class="body-image" src="images/body/03-digital-evidence-integrity-what-courts-look-for.png" alt="본문 이미지" loading="lazy" />
+<p>악플을 캡처해 뒀는데, 막상 고소를 준비하려니 "이게 진짜 증거가 될까?" 싶은 불안, 느껴본 적 있으신가요. 저장해둔 파일이 법원에선 다르게 보일 수 있다는 이야기, 차분히 짚어 드릴게요.</p>
+<h2>법원이 디지털 파일을 볼 때 따지는 두 가지</h2>
+<p><strong>동일성</strong>은 "법정에 낸 파일이 원본과 같은가"를 묻는 요건이에요. <strong>무결성</strong>은 "수집·보관 과정에서 조작되거나 바뀐 게 없는가"예요. 이 두 가지가 모두 충족돼야 증거능력이 인정돼요.</p>
+<p>대법원 2017도13263 판결(2018. 2. 8.)은 이 기준을 명확히 했어요. 전자문서가 증거로 인정되려면 원본과 제출 파일의 해시값 비교, 수집·전달·보관 관여자의 진술, 검증·감정 결과를 종합해 동일성을 구체적으로 증명해야 한다고 했거든요. 같은 사건에서 파일 20개의 해시값이 원본과 달랐고, 해당 파일들은 증거능력이 부정됐어요.</p>
+<h2>해시값, 왜 중요한 거예요</h2>
+<p>해시값은 파일 내용을 수학 함수로 변환한 고정 길이 문자열이에요. 파일이 단 1바이트라도 바뀌면 해시값이 완전히 달라져요. "이 파일은 수집 이후 손대지 않았다"는 걸 객관적으로 보여주는 지문 같은 거예요.</p>
+<p>수사기관이 현장에서 디지털 증거를 압수할 때 원본과 사본의 해시값을 그 자리에서 맞춰보는 이유가 바로 이 때문이에요. 전체 이미지 파일의 해시값만으로는 개별 파일 하나하나의 동일성을 검증하기 어렵다는 것도 같은 판결에서 강조된 부분이에요.</p>
+<h2>단순 스크린샷이 약한 이유</h2>
+<p>일반 스크린샷은 촬영 시각, 원본 URL, 편집 여부를 독립적으로 확인할 방법이 없어요. 화면에 작성자 이름이나 날짜가 보여도 "이 이미지 자체가 조작되지 않았다"는 보장이 없거든요. 수사기관이나 법원이 단순 캡처를 직접 증거보다 보조 자료로 보는 경우가 많은 게 그래서예요.</p>
+<h2>지금 할 수 있는 것</h2>
+<p>캡처할 때부터 URL·게시 시각·작성자 정보를 함께 담아 두세요. 가능하면 페이지 전체를 PDF로 저장해 두는 게 좋아요. 자가 보존 단계에서 동일성·무결성 주장의 근거를 미리 마련해 두는 거예요. 다만 이건 1차 보존 자료예요. 법적 효력을 강화하려면 공증·디지털 포렌식 전문기관의 도움이 별도로 필요해요.</p>
+<p>증거 하나가 나중에 얼마나 큰 차이를 만드는지, 이 글이 조금이라도 도움이 됐으면 해요.</p>
+<blockquote>이 글은 일반 정보예요. 구체적인 일은 변호사와 상의하세요. 많이 힘들 땐 자살예방상담 109(24시간)가 있어요.</blockquote>
+<h2>참고 자료</h2>
+<ul><li><a href="https://casenote.kr/%EB%8C%80%EB%B2%95%EC%9B%90/2017%EB%8F%8413263">대법원 2018. 2. 8. 선고 2017도13263 판결 — CaseNote</a></li><li><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002343517">디지털 증거의 증거능력 요건 중 무결성 및 동일성에 대하여 — KCI 논문</a></li><li><a href="https://www.scourt.go.kr/portal/gongbo/PeoplePopupView.work?gubun=21&seqNum=1968">검사가 제출한 디지털 증거가 증거능력을 인정받지 못하게 된 이유는? — 대법원 국민사법포털</a></li><li><a href="https://www.daeryunlaw-forensic.com/lawInfo_new/9689">일상 속 디지털 증거 확보 중요성 및 수집 방법 — 법무법인 대륜 포렌식</a></li></ul>
+</article>
+</div>
+<footer class="site-footer">인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 글은 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)</footer>
+</body>
+</html>

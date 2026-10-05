@@ -1,0 +1,25 @@
+{
+  "name": "@vibecode/ext-build",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared MV3 Chrome-extension build pipeline (build/doctor/dev/watch/package) for the vibecode extensions.",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./lib": "./lib.mjs",
+    "./build": "./build.mjs",
+    "./doctor": "./doctor.mjs",
+    "./dev": "./dev.mjs",
+    "./watch": "./watch.mjs",
+    "./package": "./package.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "lib.mjs",
+    "build.mjs",
+    "doctor.mjs",
+    "dev.mjs",
+    "watch.mjs",
+    "package.mjs"
+  ]
+}

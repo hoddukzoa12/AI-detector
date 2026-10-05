@@ -1,0 +1,79 @@
+{
+  "manifest_version": 3,
+  "name": "인포커터",
+  "description": "이름과 별칭을 감지해 웹페이지에서 자동으로 가리고, 필요한 순간 URL·시간·해시가 담긴 증거 PDF로 보존합니다.",
+  "version": "0.1.0",
+  "minimum_chrome_version": "120",
+  "permissions": ["storage", "tabs", "contextMenus", "scripting", "webNavigation", "declarativeNetRequest", "offscreen", "unlimitedStorage", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "public/icons/icon-16.png",
+    "32": "public/icons/icon-32.png",
+    "48": "public/icons/icon-48.png",
+    "128": "public/icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "인포커터",
+    "default_popup": "public/popup.html",
+    "default_icon": {
+      "16": "public/icons/icon-16.png",
+      "32": "public/icons/icon-32.png"
+    }
+  },
+  "commands": {
+    "launch-picker": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "인포커터 선택 모드 시작"
+    },
+    "toggle-global": {
+      "suggested_key": { "default": "Alt+Shift+O" },
+      "description": "인포커터 전역 숨김 켜기/끄기"
+    },
+    "toggle-site-profile": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "현재 사이트 프로필 켜기/끄기"
+    },
+    "toggle-peek": {
+      "suggested_key": { "default": "Alt+Shift+E" },
+      "description": "숨긴 요소 임시 보기"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "all_frames": true,
+      "js": [
+        "src/content/text-blocks-package.js",
+        "src/content/watch-package.js",
+        "src/content/constants.js",
+        "src/content/peek.js",
+        "src/content/toast.js",
+        "src/content/state.js",
+        "src/content/frame-context.js",
+        "src/content/site-storage.js",
+        "src/content/dom-block.js",
+        "src/content/text-block-runtime.js",
+        "src/content/watch-runtime.js",
+        "src/content/selector-engine.js",
+        "src/content/ai-runtime.js",
+        "src/content/ai-collector.js",
+        "src/content/render-coordinator.js",
+        "src/content/picker-overlay.js",
+        "src/content/picker-analysis.js",
+        "src/content/picker-hover.js",
+        "src/content/picker-session.js",
+        "src/content/picker-iframe.js",
+        "src/content/picker-refine-panel.js",
+        "src/content/picker-session-panel.js",
+        "src/content/picker-ui.js",
+        "src/content/index.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

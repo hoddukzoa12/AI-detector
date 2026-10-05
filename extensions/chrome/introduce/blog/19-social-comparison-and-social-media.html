@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="SNS 볼수록 내가 초라해지는 이유 — 비교의 함정 — 인포커터 블로그" />
+<meta property="og:description" content="피드를 내리다 마음이 무거워진 적 있죠? 그건 의지 문제가 아니에요. 비교가 뇌의 기본값인 이유, 그리고 그 굴레에서 조금 벗어나는 방법을 이야기해요." />
+<meta property="og:image" content="../assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SNS 볼수록 내가 초라해지는 이유 — 비교의 함정 — 인포커터 블로그" />
+<meta name="twitter:description" content="피드를 내리다 마음이 무거워진 적 있죠? 그건 의지 문제가 아니에요. 비교가 뇌의 기본값인 이유, 그리고 그 굴레에서 조금 벗어나는 방법을 이야기해요." />
+<meta name="twitter:image" content="../assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>SNS 볼수록 내가 초라해지는 이유 — 비교의 함정 — 인포커터 블로그</title>
+<meta name="description" content="피드를 내리다 마음이 무거워진 적 있죠? 그건 의지 문제가 아니에요. 비교가 뇌의 기본값인 이유, 그리고 그 굴레에서 조금 벗어나는 방법을 이야기해요." />
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#f5f5f5;--ink:#141414;--muted:#787878;--dim:#a3a3a3;--line:#e5e5e5;--brand:#0a6cff;--brand-dark:#084fbf;--brand-tint:#f6f9ff;--brand-soft:#e6efff;--maxw:720px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--brand)}
+.top{padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{font-size:14px;color:var(--muted);text-decoration:none}
+article{padding:40px 0 8px}
+h1{font-size:30px;line-height:1.32;letter-spacing:-.02em;margin:.2em 0 .3em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px;font-weight:600}
+h2{font-size:21px;margin:1.6em 0 .4em;letter-spacing:-.01em}
+p{margin:.7em 0}
+blockquote{margin:1em 0;padding:12px 18px;background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:8px;color:#374151;font-size:15px}
+ul{padding-left:1.2em}li{margin:.3em 0}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.refs a{word-break:break-all}
+footer{padding:28px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:24px}
+/* index */
+.hero{padding:56px 0 28px;text-align:center}
+.hero h1{font-size:30px}.hero p{color:var(--muted);max-width:30em;margin:.4em auto}
+.group{padding:26px 0;border-top:1px solid var(--line)}
+.group h2{font-size:18px;margin:0 0 14px}
+.cardlist{display:grid;gap:12px}
+.post{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .12s ease,background .12s ease}
+.post:hover{border-color:var(--brand);background:var(--brand-tint)}
+.post-thumb{flex:0 0 auto;width:104px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.post-body{flex:1 1 auto;min-width:0}
+.post b{display:block;font-size:16px;margin-bottom:4px}
+.post span{color:var(--muted);font-size:14px}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:6px 0 20px}
+.body-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--surface);margin:14px 0 24px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:20px}.nav a{color:var(--muted);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+.site-footer{border-top:1px solid var(--line);padding:32px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="bar"><a class="brand" href="../index.html">인포커터</a><nav class="nav"><a href="../index.html">소개</a><a href="index.html">블로그</a><a href="../faq.html">FAQ</a><a href="../index.html#start">시작하기</a></nav></div></header>
+<div class="wrap">
+<p style="margin:22px 0 0"><a href="index.html" style="font-size:14px;color:var(--muted)">← 블로그 목록</a></p>
+<article>
+<h1>SNS 볼수록 내가 초라해지는 이유 — 비교의 함정</h1>
+<div class="meta">2026-05-30 · <span class="tag">심리</span><span class="tag">마음챙김</span></div>
+<img class="thumb" src="images/19-social-comparison-and-social-media.png" alt="SNS 볼수록 내가 초라해지는 이유 — 비교의 함정" />
+<img class="body-image" src="images/body/19-social-comparison-and-social-media.png" alt="본문 이미지" loading="lazy" />
+<p>피드를 내리다 보면 어느 순간 마음이 뚝 떨어지죠. 누군가의 반짝이는 근황, 부러운 성과, 행복해 보이는 일상 — 그것들을 보고 나면 "나는 왜 이러나" 싶어져요. 그런데 이건 여러분이 약해서가 아니에요. 비교는 뇌가 태어날 때부터 탑재한 기능이거든요.</p>
+<h2>비교는 뇌의 기본값이에요</h2>
+<p>사회심리학자 레온 페스팅어(Leon Festinger)가 1954년에 이걸 처음 정리했어요. 사람은 자신의 능력과 판단을 측정할 객관적인 기준이 없을 때, 자동으로 옆 사람을 보며 스스로를 가늠한다는 거예요. 자로 재듯 정확하게 알 수 없으니까, 남을 거울로 삼는 거죠.</p>
+<p>그중에서도 나보다 잘나가 보이는 사람과 비교하는 상향 비교가 특히 문제예요. 가끔은 자극이 되기도 하지만, "저 간극은 절대 못 좁힐 것 같은데"라는 생각이 드는 순간 열등감과 불안이 켜져요.</p>
+<h2>SNS는 비교를 증폭시켜요</h2>
+<p>SNS 피드가 유독 힘든 이유가 있어요. 거기 올라오는 건 편집된 인생의 하이라이트예요. 좋은 날, 특별한 순간, 성공의 증거만 골라서 올리거든요. 그걸 보면서 자신의 평범한 하루와 비교하면 당연히 내가 지는 게임이에요.</p>
+<p>에단 크로스(Ethan Kross) 연구팀이 2013년에 이걸 직접 확인했어요. 82명의 청년을 2주 동안 추적했는데, 페이스북을 사용한 직후일수록 기분이 더 나빠졌고 삶의 만족도도 서서히 떨어졌어요. 반면 직접 만나거나 전화로 대화한 날은 오히려 기분이 좋아졌고요. 스크롤만 하는 수동적 사용이 비교를 부추기고, 그게 우울·불안으로 이어지는 경로는 이후 연구들에서도 계속 확인됐어요.</p>
+<h2>비교의 강도를 조금씩 낮추는 법</h2>
+<p>비교를 완전히 안 하는 건 불가능해요. 뇌가 원래 그렇게 생겼거든요. 대신 그 빈도와 강도를 줄이는 건 가능해요.</p>
+<p>알림을 끄고 스크롤 시간에 경계를 두세요. 무의식적으로 피드를 여는 순간이 가장 큰 비교 촉발 지점이에요.</p>
+<p>비교 대상을 바꿔보는 것도 도움이 돼요. "어제의 나"와 비교하면 불안 대신 작은 성장감이 생겨요.</p>
+<p>"나 지금 부럽다", "나 지금 불안하다"고 감정에 이름을 붙여보는 것도요. 감정을 말로 표현하는 것만으로도 그 강도가 줄어든다는 신경과학 연구가 있어요. (이 이야기는 이어지는 글에서 더 자세히 다뤄요.)</p>
+<h2>오늘 해볼 수 있는 것</h2>
+<p>오늘 피드를 내리다 마음이 무거워지는 순간이 오면, 잠깐 멈추고 자신에게 물어봐 주세요. "지금 내가 뭘 보고 있는 거지?" 그 한 번의 멈춤이 비교의 고리를 끊는 첫 걸음이에요. 여러분은 충분히 괜찮은 사람이에요.</p>
+<blockquote>이 글은 일반 정보예요. 구체적인 일은 전문가(상담·변호사)와 상의하세요. 많이 힘들 땐 자살예방상담 109(24시간)가 있어요.</blockquote>
+<h2>참고 자료</h2>
+<ul><li><a href="https://doi.org/10.1177/001872675400700202">Festinger, L. (1954) — A Theory of Social Comparison Processes</a></li><li><a href="https://www.psychologytoday.com/us/basics/social-comparison-theory">Psychology Today — Social Comparison Theory</a></li><li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0069841">Kross et al. (2013) — Facebook Use Predicts Declines in Subjective Well-Being in Young Adults, PLOS ONE</a></li><li><a href="https://econtent.hogrefe.com/doi/10.1027/1864-1105/a000269">Passive Facebook Use and Depression — Journal of Media Psychology (Hogrefe)</a></li></ul>
+</article>
+</div>
+<footer class="site-footer">인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 글은 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)</footer>
+</body>
+</html>

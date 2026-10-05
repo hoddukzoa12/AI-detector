@@ -1,0 +1,379 @@
+{
+  "@@locale": "en",
+  "appTitle": "InfoCutter",
+  "searchOrTypeWebAddress": "Search or type a web address",
+  "findOnPageHint": "Find on page...",
+  "openWebPageFirst": "Open a web page first",
+  "pickerActiveOnHost": "Picker active on {host}",
+  "@pickerActiveOnHost": {
+    "placeholders": {
+      "host": {
+        "type": "String"
+      }
+    }
+  },
+  "hiddenSelectorOnHost": "Hidden {selector} on {host}",
+  "@hiddenSelectorOnHost": {
+    "placeholders": {
+      "selector": {
+        "type": "String"
+      },
+      "host": {
+        "type": "String"
+      }
+    }
+  },
+  "savedOffline": "{url} saved offline.",
+  "@savedOffline": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "unableToSave": "Unable to save.",
+  "share": "Share",
+  "login": "Login",
+  "username": "Username",
+  "password": "Password",
+  "cancel": "Cancel",
+  "ok": "OK",
+  "openNewWindow": "Open New Window",
+  "saveWindow": "Save Window",
+  "savedWindows": "Saved Windows",
+  "newTab": "New tab",
+  "newIncognitoTab": "New incognito tab",
+  "favorites": "Favorites",
+  "history": "History",
+  "webArchives": "Web Archives",
+  "findOnPage": "Find on page",
+  "desktopMode": "Desktop mode",
+  "settings": "Settings",
+  "developers": "Developers",
+  "inAppWebViewProject": "InAppWebView Project",
+  "closeTabs": "Close tabs",
+  "closeAllTabs": "Close all tabs",
+  "linkPreview": "Link Preview",
+  "openInNewTab": "Open in a new tab",
+  "openInNewIncognitoTab": "Open in a new incognito tab",
+  "copyAddressLink": "Copy address link",
+  "shareLink": "Share link",
+  "downloadImage": "Download image",
+  "shareImage": "Share image",
+  "imageInNewTab": "Image in a new tab",
+  "searchImageOnGoogle": "Search this image on Google",
+  "generalSettings": "General Settings",
+  "themeMode": "Theme mode",
+  "themeModeSystem": "Use system setting",
+  "themeModeLight": "Light",
+  "themeModeDark": "Dark",
+  "searchEngine": "Search Engine",
+  "defaultSite": "Default site",
+  "homePage": "Home page",
+  "on": "ON",
+  "off": "OFF",
+  "customUrlHomePage": "Custom URL Home Page",
+  "defaultUserAgent": "Default User Agent",
+  "debuggingEnabled": "Debugging Enabled",
+  "debuggingEnabledDescription": "Enables debugging of web contents loaded into any WebViews of this application. On iOS < 16.4, the debugging mode is always enabled.",
+  "infocutterCutPage": "Hide page blocks",
+  "infocutterReviewSelection": "Block hiding settings",
+  "infocutterReviewSelectionDescription": "Confirm the block and saved name to hide on {host}.",
+  "@infocutterReviewSelectionDescription": {
+    "placeholders": {
+      "host": {
+        "type": "String"
+      }
+    }
+  },
+  "infocutterCardName": "Block name",
+  "infocutterSelector": "Selector",
+  "infocutterSelectorCandidates": "Block candidates",
+  "infocutterPointerCandidates": "Pointer candidates",
+  "infocutterTargetRange": "Target range",
+  "infocutterSelectorDetails": "Selector details",
+  "infocutterNarrowTarget": "Narrow target",
+  "infocutterWidenTarget": "Widen target",
+  "infocutterNextSelector": "Next selector",
+  "infocutterSelectedTarget": "Selected target",
+  "infocutterSelectedBadge": "Selected",
+  "infocutterApplyBlocked": "This selector cannot be applied",
+  "infocutterCutSettingsTab": "Blocks",
+  "infocutterCurrentSiteTab": "Site",
+  "infocutterWatchTab": "Watch",
+  "infocutterEvidenceTab": "Captures",
+  "infocutterSettingsTab": "Settings",
+  "infocutterBlockShortTab": "Block",
+  "infocutterTextShortTab": "Text",
+  "infocutterAiShortTab": "AI",
+  "infocutterTemplatesShortTab": "Templates",
+  "infocutterDirectRemoveCategory": "Remove manually",
+  "infocutterAutoRemoveCategory": "Remove automatically",
+  "infocutterManageRemovedCategory": "Manage removed items",
+  "infocutterAppSettingsCategory": "Configure app",
+  "infocutterPickBlockRemoveTab": "Pick a block on screen to remove",
+  "infocutterKeywordBlockRemoveTab": "Remove blocks that contain text",
+  "infocutterNetworkRequestBlockTab": "Block ad/tracker requests",
+  "infocutterWatchAutoRemoveTab": "Hide when watch terms appear",
+  "infocutterAiRecommendRemoveTab": "Let AI recommend items to remove",
+  "infocutterCurrentSiteRulesTab": "Manage current site rules",
+  "infocutterImportRecommendedRulesTab": "Import recommended rules",
+  "infocutterEvidenceRecordsViewTab": "View capture records",
+  "infocutterGlobalSettingsTab": "Turn Infocutter on/off",
+  "infocutterClosePanel": "Close Infocutter panel",
+  "infocutterActiveProfile": "Active profile",
+  "infocutterNoActiveProfile": "No active profile",
+  "infocutterNoItemsYet": "No items yet",
+  "infocutterWatchTargets": "Watch targets",
+  "infocutterEvidenceRecords": "Capture records",
+  "infocutterImportAndSettings": "Import and settings",
+  "infocutterGlobalEnabled": "Enable Infocutter globally",
+  "infocutterProfiles": "Profiles",
+  "infocutterProfilesCount": "{count} profiles",
+  "@infocutterProfilesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterCreateProfile": "Create profile",
+  "infocutterProfileName": "Profile name",
+  "infocutterMatchers": "Matchers",
+  "infocutterEditMatchers": "Edit matchers",
+  "infocutterRename": "Rename",
+  "infocutterDelete": "Delete",
+  "infocutterConfirmDeleteMessage": "Delete this item? This cannot be undone.",
+  "infocutterImportJson": "Import Chrome JSON",
+  "infocutterExportJson": "Export Chrome JSON",
+  "infocutterExportCopied": "Export JSON copied to clipboard",
+  "infocutterSave": "Save",
+  "infocutterRuleActions": "Rule actions",
+  "infocutterEditSelector": "Edit selector",
+  "infocutterToggleRuleMode": "Toggle hide/exception",
+  "infocutterFrameScope": "Frame scope",
+  "infocutterMainFrame": "Main frame",
+  "infocutterRuleModeHide": "Hide",
+  "infocutterRuleModeUnhide": "Exception",
+  "infocutterTemplates": "Rule templates",
+  "infocutterImportTemplate": "Import template",
+  "infocutterTemplateImported": "{name} template imported",
+  "@infocutterTemplateImported": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "infocutterWatchGlobalEnabled": "Enable watch",
+  "infocutterWatchAutoMask": "Auto-mask when detected",
+  "infocutterWatchTargetName": "Watch target name",
+  "infocutterWatchAliases": "Aliases (comma-separated)",
+  "infocutterAddWatchTarget": "Add watch target",
+  "infocutterWatchDetections": "Recent detections",
+  "infocutterCaptureEvidence": "Save current page capture",
+  "infocutterNoEvidenceRecords": "No capture records saved",
+  "infocutterEvidenceCaptured": "Saved capture record #{sequence}",
+  "@infocutterEvidenceCaptured": {
+    "placeholders": {
+      "sequence": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterAiAutoMasking": "AI auto masking",
+  "infocutterAiPendingDecision": "App inclusion, privacy, and cost policy still need a product decision.",
+  "infocutterAiConfigured": "{model} configured",
+  "@infocutterAiConfigured": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      }
+    }
+  },
+  "infocutterAiEndpoint": "AI endpoint",
+  "infocutterAiModel": "Model",
+  "infocutterAiApiKey": "API key",
+  "infocutterAiSaveConfig": "Save AI config",
+  "infocutterAiConfigSaved": "AI config saved",
+  "infocutterAiResetHosts": "Reset analyzed hosts",
+  "infocutterAiAnalyzedHosts": "{count} analyzed hosts",
+  "@infocutterAiAnalyzedHosts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterAiAnalyzeCurrentPage": "Analyze current page with AI",
+  "infocutterAiAnalyzing": "Analyzing",
+  "infocutterAiAnalyzeFailed": "AI analysis failed",
+  "infocutterAiApplySuggestion": "Apply suggestion",
+  "infocutterAiSuggestions": "{count} AI suggestions",
+  "@infocutterAiSuggestions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterTextBlocks": "Text blocks",
+  "infocutterTextBlockGlobalEnabled": "Enable text block hiding",
+  "infocutterTextBlockKeyword": "Keyword",
+  "infocutterTextBlockObjectName": "Object name",
+  "infocutterTextBlockMinMatchCount": "Minimum repeats",
+  "infocutterTextBlockAddRule": "Add text block rule",
+  "infocutterTextBlockProfileEnabled": "Enable text rules for this site",
+  "infocutterCaptureKeyword": "Grab keyword",
+  "infocutterNetworkFilters": "Network filters",
+  "infocutterNetworkFilterGlobalEnabled": "Enable network filters",
+  "infocutterNetworkFilterPaste": "Paste ABP/uBlock network filters",
+  "infocutterNetworkFilterImport": "Import filters",
+  "infocutterNetworkFilterImportResult": "{imported} imported · {skipped} skipped",
+  "@infocutterNetworkFilterImportResult": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterNetworkFilterAllowRule": "Allow rule",
+  "infocutterNetworkFilterBlockRule": "Block rule",
+  "infocutterRemove": "Remove",
+  "infocutterSavedCards": "{count} blocks",
+  "@infocutterSavedCards": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterSavedRules": "{count} rules",
+  "@infocutterSavedRules": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterEnabledRules": "{count} active hides",
+  "@infocutterEnabledRules": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterMatchCount": "{count} matches",
+  "@infocutterMatchCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterInvalidSelector": "Invalid selector",
+  "infocutterSaveRule": "Hide block",
+  "infocutterSessionPickHint": "Click elements on the page to stage them",
+  "infocutterStagedCount": "{count} staged",
+  "@infocutterStagedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterSessionApplyAll": "Apply all ({count})",
+  "@infocutterSessionApplyAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterPickTab": "Pick",
+  "infocutterHiddenListTab": "Hidden list",
+  "infocutterTooBroadSelector": "Hides the whole page",
+  "infocutterFixSelectorsToApply": "Fix invalid selectors to apply",
+  "infocutterModulesTab": "Modules",
+  "infocutterModulesHint": "Turning a module off stops it on every site",
+  "infocutterBackupRestore": "Backup / restore",
+  "infocutterExportRules": "Export",
+  "infocutterImportRules": "Import",
+  "infocutterRulesExported": "Block rules copied to clipboard",
+  "infocutterRulesImported": "Rules imported",
+  "infocutterImportPasteHint": "Paste exported JSON",
+  "infocutterUndo": "Undo",
+  "infocutterEvidenceCaptureFailed": "Could not save page capture",
+  "infocutterImportReplaceWarning": "Warning: importing replaces your saved rules",
+  "infocutterImportInvalid": "Not a valid config bundle",
+  "infocutterAiPrompt": "AI prompt",
+  "infocutterAiPromptHelp": "Describe what to hide (the output format is handled automatically)",
+  "infocutterAlreadyHiddenSection": "Already hidden ({count})",
+  "@infocutterAlreadyHiddenSection": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterPickingNowSection": "Picking now ({count})",
+  "@infocutterPickingNowSection": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "infocutterAppliedEditsLiveHint": "Edits here apply to the page immediately",
+  "infocutterDeleteRule": "Delete rule",
+  "infocutterCardsManagedInPickTab": "Edit this profile's cards in the 고르기 (Pick) tab",
+  "settingsAdvanced": "Advanced",
+  "settingsAdvancedSubtitle": "Detailed WebView options. Most people never need these.",
+  "settingsDeveloperTools": "Developer tools",
+  "onboardingTitle": "Keep only what you want to see",
+  "onboardingPickBody": "Tap the scissors next to the address bar, then pick what to hide. It stays hidden the next time you visit.",
+  "onboardingPeekBody": "Turn on peek to reveal hidden parts for a moment. Rules are saved per site.",
+  "onboardingStart": "Get started",
+  "onboardingSkip": "Skip",
+  "authUnsupportedTitle": "Sign-in is not available in this browser",
+  "authUnsupportedBody": "Google and some other services block sign-in from in-app browsers by policy. This is not an app error.",
+  "authOpenExternally": "Open in default browser",
+  "a11yBack": "Back",
+  "a11yForward": "Forward",
+  "a11yReload": "Reload",
+  "a11yMoreMenu": "More options",
+  "a11yTabCount": "Open tabs",
+  "a11yInfocutterPick": "Pick element to hide",
+  "a11yActionBar": "Browser toolbar",
+  "a11ySiteInfo": "View site info",
+  "rendererCrashTitle": "The page process stopped",
+  "rendererCrashBody": "When the device runs low on memory, the system reclaims web page processes first. Close other apps and try again.",
+  "rendererCrashRetry": "Try again",
+  "loadErrorTitle": "Could not load this page",
+  "loadErrorBodyGeneric": "A network error occurred, or the site could not be reached.",
+  "loadErrorTimeout": "No response in time. Check the connection and try again.",
+  "loadErrorRetry": "Try again",
+  "siteProtectionBypassTitle": "Turn off protection on this site",
+  "siteProtectionBypassSubtitle": "Temporarily disable hide, filters, and watch if they break the page",
+  "siteProtectionBypassActiveHint": "Infocutter protection is off for this host.",
+  "networkFilterSubscribeUrl": "Filter list URL",
+  "networkFilterSubscribeAction": "Fetch from URL",
+  "networkFilterSubscribeFailed": "Could not fetch filter list: {error}",
+  "@networkFilterSubscribeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "jsDialogDefaultTitle": "Page message",
+  "readerModeTitle": "Reader mode",
+  "readerModeEmpty": "Could not find readable text on this page.",
+  "readerModeFailed": "Could not open reader mode.",
+  "menuReaderMode": "Reader mode",
+  "pickerStopped": "Selection mode ended"
+}

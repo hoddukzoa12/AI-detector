@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- asset-meta:start -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="assets/site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="자주 묻는 질문 — 인포커터" />
+<meta property="og:description" content="인포커터가 무엇을 하는지, 내 정보는 어디 저장되는지, 무료인지 — 자주 묻는 질문을 모았어요." />
+<meta property="og:image" content="assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="자주 묻는 질문 — 인포커터" />
+<meta name="twitter:description" content="인포커터가 무엇을 하는지, 내 정보는 어디 저장되는지, 무료인지 — 자주 묻는 질문을 모았어요." />
+<meta name="twitter:image" content="assets/og-image.png" />
+<!-- asset-meta:end -->
+<title>자주 묻는 질문 — 인포커터</title>
+<meta name="description" content="인포커터가 무엇을 하는지, 내 정보는 어디 저장되는지, 무료인지 — 자주 묻는 질문을 모았어요." />
+<!-- introduce FAQ. 베이스: template-260530230607.html · 스킬: infocutter-introduce-page -->
+<style>
+  :root{
+    --bg:#fff; --surface:#f5f5f5; --ink:#141414; --sub:#787878; --dim:#a3a3a3;
+    --line:#e5e5e5; --brand:#0a6cff; --brand-dark:#084fbf; --brand-tint:#f6f9ff;
+    --brand-soft:#e6efff; --navy:#071d49; --accent:#d97706;
+    --radius:.5rem; --radius-lg:.75rem; --maxw:1080px; --readw:720px;
+    --font:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,"Noto Sans KR",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .read{max-width:var(--readw);margin:0 auto;padding:0 24px}
+  .section{padding:56px 0}
+  .muted{color:var(--sub)}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:.2em 0 .3em;font-weight:700}
+  h2{font-size:18px;margin:0 0 6px;font-weight:600}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--brand);margin:0 0 6px}
+  .lead{font-size:18px;color:var(--sub)}
+  .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+  .site-header .bar{max-width:var(--maxw);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink)}
+  .nav{display:flex;gap:20px}.nav a{color:var(--sub);font-size:15px}.nav a:hover{color:var(--ink);text-decoration:none}
+  .qa{display:grid;gap:12px;margin-top:24px}
+  .qa details{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);padding:0}
+  .qa summary{list-style:none;cursor:pointer;padding:18px 20px;font-weight:600;font-size:17px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .qa summary::-webkit-details-marker{display:none}
+  .qa summary::after{content:"+";color:var(--brand);font-weight:700;font-size:20px;line-height:1}
+  .qa details[open] summary::after{content:"–"}
+  .qa .a{padding:0 20px 18px;color:var(--sub);font-size:16px}
+  .note{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;color:var(--sub);font-size:15px;margin-top:24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--brand);color:#fff;padding:13px 24px;border-radius:10px;font-weight:600;font-size:15px;transition:background .15s ease}
+  .btn:hover{background:var(--brand-dark);text-decoration:none}
+  .hero{padding:80px 0 36px;text-align:center;background:linear-gradient(180deg,var(--brand-tint),#fff 75%)}
+  .site-footer{border-top:1px solid var(--line);padding:36px 0 64px;color:var(--dim);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html" style="text-decoration:none">인포커터</a>
+    <nav class="nav"><a href="index.html">소개</a><a href="blog/index.html">블로그</a><a href="faq.html">FAQ</a><a href="index.html#start">시작하기</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="read">
+    <p class="eyebrow">FAQ</p>
+    <h1>자주 묻는 질문</h1>
+    <p class="lead center" style="margin:0 auto">궁금한 걸 모았어요. 더 묻고 싶은 게 있으면 언제든.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="read">
+    <div class="qa">
+      <details open>
+        <summary>인포커터는 뭘 해주나요?</summary>
+        <div class="a">보고 싶지 않은 이름을 등록하면, 그 이름이 든 글을 어떤 사이트에서든 자동으로 흐리게 가려요. 당신이 굳이 읽지 않아도 되게요. 필요하면 그 화면을 증거로 저장해 둘 수도 있어요.</div>
+      </details>
+      <details>
+        <summary>정말 안 보이게 되나요?</summary>
+        <div class="a">그 이름이 들어간 글 영역을 찾아 흐림 처리해요. 세상 모든 걸 100% 막아주진 못하지만, 마주쳐서 상처받는 일을 크게 줄여줍니다. '안 보기'는 회피가 아니라 가장 강력한 보호예요.</div>
+      </details>
+      <details>
+        <summary>무료인가요?</summary>
+        <div class="a">네. 설치하면 바로 쓸 수 있어요. 이름만 등록하면 끝이에요.</div>
+      </details>
+      <details>
+        <summary>제가 등록한 이름이나 저장한 자료, 어디로 가나요?</summary>
+        <div class="a">당신 기기에만 저장돼요. 외부 서버로 전송되지 않습니다. 열어보고 지우고는 온전히 당신 마음이에요.</div>
+      </details>
+      <details>
+        <summary>저장한 화면을 나중에 증거로 쓸 수 있나요?</summary>
+        <div class="a">캡처 시각·원본 주소(URL)·위·변조 방지 해시가 담긴 PDF로 남겨둬요. 소명에 도움이 되는 참고자료가 됩니다. 다만 공증·디지털 포렌식·법률 상담을 대신하지는 않아요. 다툼이 큰 일이면 변호사와 꼭 상의하세요.</div>
+      </details>
+      <details>
+        <summary>어떤 사이트에서 작동하나요?</summary>
+        <div class="a">일반 웹페이지(http/https)에서 동작해요. 평소 다니는 커뮤니티·SNS·뉴스 댓글 같은 곳이요.</div>
+      </details>
+      <details>
+        <summary>지금 많이 힘들어요. 어디에 도움을 청하죠?</summary>
+        <div class="a">혼자 견디지 마세요. 자살예방상담전화 <strong>109</strong>(24시간), 정신건강위기상담 <strong>1577-0199</strong>, 가까운 정신건강복지센터가 있어요. 믿을 수 있는 사람에게 말하는 것도 큰 힘이 됩니다.</div>
+      </details>
+    </div>
+    <p class="note">본 페이지는 일반 정보예요. 의료·법률 자문이 아닙니다.</p>
+    <p class="center" style="margin-top:28px"><a class="btn" href="index.html#start">무료로 시작하기</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  인포커터 · 보고 싶지 않은 이름을 가려 주는 크롬 확장 · 본 페이지는 일반 정보이며 의료·법률 자문이 아닙니다. · 힘들 땐 자살예방상담 <strong>109</strong>(24시간)
+</footer>
+
+</body>
+</html>

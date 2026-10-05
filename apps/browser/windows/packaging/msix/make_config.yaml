@@ -1,0 +1,7 @@
+display_name: Infocutter
+publisher_display_name: Dalsoop
+identity_name: com.dalsoop.infocutter
+logo_path: assets/icon/icon.png
+capabilities: internetClient, location, microphone, webcam
+languages: en-us
+install_certificate: "false"

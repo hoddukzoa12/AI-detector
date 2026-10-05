@@ -1,0 +1,104 @@
+name: Windows package test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-test-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    name: Linux regression and Windows package
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: apps/inspector
+    env:
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+      ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: apps/inspector/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+      - run: npm test
+      - run: npm run test:e2e
+      - run: npm run self-test
+      - run: npm run package:win
+      - run: npm run verify:win
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows-package
+          path: |
+            apps/inspector/release/Inspektor-win32-x64.zip
+            apps/inspector/release/Inspektor-win32-x64.manifest.json
+            apps/inspector/release/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 3
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: linux-test-evidence
+          path: apps/inspector/release/verification/ocr-clef/
+          if-no-files-found: ignore
+          retention-days: 3
+
+  windows:
+    name: Windows Server 2025 executable and GUI
+    needs: package
+    runs-on: windows-2025
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: apps/inspector
+        shell: pwsh
+    env:
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+      ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: apps/inspector/package-lock.json
+      - run: npm ci --ignore-scripts
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: windows-package
+          path: apps/inspector/release
+      - name: Verify ZIP digest and extract
+        run: |
+          $line = Get-Content release/SHA256SUMS.txt | Where-Object { $_ -match '  Inspektor-win32-x64.zip$' }
+          if (@($line).Count -ne 1) { throw 'Expected exactly one package checksum' }
+          $expected = ($line -split '  ')[0]
+          $actual = (Get-FileHash release/Inspektor-win32-x64.zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actual -ne $expected) { throw 'Windows package ZIP checksum mismatch' }
+          Expand-Archive release/Inspektor-win32-x64.zip -DestinationPath release -Force
+      - run: npm run verify:win
+      - name: Run bundled Node, real EXE self-test and GUI
+        run: node scripts/windows-runner-check.mjs
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: windows-test-evidence
+          path: apps/inspector/release/windows-ci/
+          if-no-files-found: error
+          retention-days: 3

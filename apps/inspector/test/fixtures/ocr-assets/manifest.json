@@ -1,0 +1,152 @@
+[
+  {
+    "id": "korean",
+    "file": "korean.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "3921129c06027bc637627440d5414c25a0beb88301e4689f1d6c10dde6570a3e",
+    "byteLength": 8306
+  },
+  {
+    "id": "english",
+    "file": "english.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "f66b17ad430058eb131b361706d2c457efb8427f9e72a5c7c309ee7668599859",
+    "byteLength": 11241
+  },
+  {
+    "id": "logo",
+    "file": "logo.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "b49aa7ba7ab3f37d6e19641adb5c1a87bae37faf7620bc354a5565ac72171fd4",
+    "byteLength": 5834
+  },
+  {
+    "id": "cover",
+    "file": "cover.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "ad421e3fa6cee7e39032317465ed29834920fe5efb3b0dd26c620beb399f5ff6",
+    "byteLength": 4837
+  },
+  {
+    "id": "general",
+    "file": "general.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "a172514af4d88f4fa72ab32b9e773ec069058cc86d22a4ad78657cf55f47819f",
+    "byteLength": 8027
+  },
+  {
+    "id": "article",
+    "file": "article.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "efcce41a511a94e99627656bc88b3cd666cb5e25f2e05992b02742e36ba71168",
+    "byteLength": 7725
+  },
+  {
+    "id": "notice",
+    "file": "notice.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "bf1a6e108c6754fe5232aa6df340e9e91d0a0a1a436b144d9904e68f5190f175",
+    "byteLength": 7242
+  },
+  {
+    "id": "no-text",
+    "file": "no-text.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "8d1838006d6526f02380aa341602046b11896373c4a92cd2cce3e265dd2f01a0",
+    "byteLength": 2872
+  },
+  {
+    "id": "unreadable",
+    "file": "unreadable.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "302a4465b4011f2f19896a3eb14e2ab5c74619d5522e6cd219e2b03af4a3f73d",
+    "byteLength": 1076
+  },
+  {
+    "id": "vector",
+    "file": "vector.svg",
+    "mime": "image/svg+xml",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "b43b1ef8f6775d620972f157e30be262008bb25252e4c980b624c68f5d21fdc6",
+    "byteLength": 224
+  },
+  {
+    "id": "jpeg",
+    "file": "korean.jpg",
+    "mime": "image/jpeg",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "eaaf4b8d737c2a0fb3d5c371b943836723a009ecf4cd002bdaef34f9aac0d9c7",
+    "byteLength": 16657
+  },
+  {
+    "id": "webp",
+    "file": "general.webp",
+    "mime": "image/webp",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "4010ba6a488ea66087511c9202638edf17a88c841bd428a9e3fa3fdf97e1321b",
+    "byteLength": 5246
+  },
+  {
+    "id": "avif",
+    "file": "logo.avif",
+    "mime": "image/avif",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "7b46a4faed733a58f93ea12c4c01c562cd93cf1452dd46744e414af7c3215032",
+    "byteLength": 2681
+  },
+  {
+    "id": "animation",
+    "file": "animated.gif",
+    "mime": "image/gif",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "037e79f1feacdc5623f4bd773d1a7e7b6c9e8171fa157c9a3f8d306a2aaf91e9",
+    "byteLength": 9073
+  },
+  {
+    "id": "animation-first",
+    "file": "animation-first.png",
+    "mime": "image/png",
+    "width": 640,
+    "height": 160,
+    "frameIndex": 0,
+    "sha256": "729df52d57f0b60a4ae6cba5a8e9e539c2b80292cf014d2e37a7ddb883b646ad",
+    "byteLength": 9400
+  }
+]

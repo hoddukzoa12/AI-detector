@@ -1,0 +1,23 @@
+services:
+  inspector:
+    build:
+      context: .
+    image: inspector:local
+    ports:
+      - "127.0.0.1:4173:4173"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      INSPECTOR_RUNTIME: docker
+      INSPECTOR_HOST: 0.0.0.0
+      INSPECTOR_PORT: "4173"
+      INSPECTOR_OUTPUT_DIR: "${INSPECTOR_OUTPUT_DIR:-/app/output}"
+    volumes:
+      - ./output:/app/output
+    init: true
+    shm_size: 1gb
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

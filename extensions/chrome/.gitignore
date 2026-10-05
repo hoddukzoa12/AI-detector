@@ -1,0 +1,8 @@
+dist
+dist-package
+safari-ios
+node_modules
+*.log
+.DS_Store
+
+.bs-debug/

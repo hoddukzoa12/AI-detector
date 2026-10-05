@@ -1,0 +1,35 @@
+# General
+.DS_Store
+*.log
+.env
+.env.*
+
+# Node / Extension
+node_modules
+dist/
+dist-package/
+packages-dist/
+packages/*/dist/
+safari-ios/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# local agent workspace (not committed)
+/.dryforge/
+
+# Inspector local results and packaged binaries
+/apps/inspector/output/
+/apps/inspector/release/

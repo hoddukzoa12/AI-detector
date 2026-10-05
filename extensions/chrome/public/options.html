@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>인포커터 관리</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main class="options">
+      <header class="options__header">
+        <div class="options__titlebar">
+          <p class="options__eyebrow">인포커터 관리자</p>
+          <h1 class="options__title">규칙 관리</h1>
+        </div>
+        <section class="options__toolbar">
+          <input id="search-input" class="options__input" type="search" placeholder="사이트, 선택자, 텍스트 규칙 검색" />
+          <select id="scope-filter" class="options__select">
+            <option value="all">전체 규칙</option>
+            <option value="main">메인 문서 규칙</option>
+            <option value="iframe">iframe 규칙</option>
+          </select>
+          <button id="refresh-button" type="button">새로고침</button>
+          <button id="toggle-global-button" type="button" class="options__secondary">전체 끄기</button>
+        </section>
+      </header>
+
+      <nav class="options__tablist" role="tablist" aria-label="설정 메뉴">
+        <button class="options__tab" type="button" role="tab" id="tab-selector" data-tab="selector" aria-controls="panel-selector" aria-selected="true">선택자 규칙</button>
+        <button class="options__tab" type="button" role="tab" id="tab-text" data-tab="text" aria-controls="panel-text" aria-selected="false" tabindex="-1">텍스트 블록</button>
+        <button class="options__tab" type="button" role="tab" id="tab-network" data-tab="network" aria-controls="panel-network" aria-selected="false" tabindex="-1">네트워크 필터</button>
+        <button class="options__tab" type="button" role="tab" id="tab-template" data-tab="template" aria-controls="panel-template" aria-selected="false" tabindex="-1">템플릿</button>
+        <button class="options__tab" type="button" role="tab" id="tab-settings" data-tab="settings" aria-controls="panel-settings" aria-selected="false" tabindex="-1">설정 / 상태</button>
+        <button class="options__tab" type="button" role="tab" id="tab-name-watch" data-tab="name-watch" aria-controls="panel-name-watch" aria-selected="false" tabindex="-1">이름 감시</button>
+        <button class="options__tab" type="button" role="tab" id="tab-ai" data-tab="ai" aria-controls="panel-ai" aria-selected="false" tabindex="-1">AI 가림</button>
+      </nav>
+
+      <div class="options__panel" role="tabpanel" id="panel-selector" data-panel="selector" aria-labelledby="tab-selector">
+        <section class="options__create-card">
+          <h2 class="options__section-title">프로필 추가</h2>
+          <div class="options__create-grid">
+            <input id="new-profile-name" class="options__input" type="text" placeholder="프로필 이름" />
+            <input id="new-profile-matcher" class="options__input" type="text" placeholder="예: https://mail.naver.com/*" />
+            <button id="create-profile-button" type="button">프로필 만들기</button>
+          </div>
+        </section>
+
+        <section class="options__create-card">
+          <h2 class="options__section-title">URL 매칭 테스트</h2>
+          <div class="options__create-grid">
+            <input id="url-test-input" class="options__input" type="text" placeholder="예: https://mail.naver.com/v3/" />
+            <button id="url-test-button" type="button">매칭 확인</button>
+          </div>
+          <p id="url-test-result" class="options__meta">테스트할 URL을 입력하면 현재 우선순위 기준으로 어떤 프로필이 적용되는지 보여줍니다.</p>
+        </section>
+
+        <section class="options__list-wrap">
+          <div id="site-list" class="options__site-list"></div>
+          <p id="empty-state" class="options__empty">조건에 맞는 규칙이 없습니다.</p>
+        </section>
+      </div>
+
+      <div class="options__panel" role="tabpanel" id="panel-text" data-panel="text" aria-labelledby="tab-text" hidden>
+        <section class="options__create-card">
+          <h2 class="options__section-title">텍스트 기반 블록 숨김</h2>
+          <div class="options__text-block-grid">
+            <input id="text-block-profile-name" class="options__input" type="text" placeholder="텍스트 프로필 이름" />
+            <input id="text-block-matcher" class="options__input" type="text" placeholder="예: https://www.naver.com/*" />
+            <input id="text-block-object-name" class="options__input" type="text" placeholder="오브젝트 이름" />
+            <input id="text-block-object-tags" class="options__input" type="text" placeholder="태그 예: ad" />
+            <input id="text-block-keyword" class="options__input" type="text" placeholder="숨길 키워드 또는 문구" />
+            <input id="text-block-min-match-count" class="options__input" type="number" min="2" step="1" value="2" />
+            <button id="text-block-create-button" type="button">텍스트 규칙 추가</button>
+          </div>
+          <div class="options__template-actions">
+            <button id="text-block-toggle-global-button" type="button" class="options__secondary">텍스트 규칙 전체 켜기</button>
+            <button id="text-block-toggle-ad-tag-button" type="button" class="options__secondary">ad 태그 숨김 끄기</button>
+          </div>
+          <div class="options__tag-toolbar">
+            <input id="text-block-hidden-tag-input" class="options__input" type="text" placeholder="숨김 태그 추가 예: sponsored" />
+            <button id="text-block-add-hidden-tag-button" type="button" class="options__secondary">숨김 태그 추가</button>
+          </div>
+          <div id="text-block-hidden-tag-list" class="options__tag-list"></div>
+          <div class="options__preview-toolbar">
+            <select id="text-block-preview-tab" class="options__select"></select>
+            <button id="text-block-refresh-tabs-button" type="button" class="options__secondary">진단 탭 새로고침</button>
+            <button id="text-block-open-tab-button" type="button" class="options__secondary">진단 탭으로 이동</button>
+          </div>
+          <p id="text-block-preview-status" class="options__meta">진단 대상 탭을 불러오는 중...</p>
+          <p id="text-block-global-status" class="options__meta">텍스트 기반 블록 숨김 상태를 불러오는 중...</p>
+          <p id="text-block-summary" class="options__meta">텍스트 규칙 통계를 불러오는 중...</p>
+          <p class="options__meta">같은 구조의 블록이 최소 N개 이상 잡혔을 때만 숨깁니다. 기존 선택자 카드 기능과는 별도 저장소로 관리됩니다.</p>
+        </section>
+
+        <section class="options__list-wrap">
+          <div id="text-block-list" class="options__site-list"></div>
+          <p id="text-block-empty-state" class="options__empty">텍스트 기반 블록 규칙이 없습니다.</p>
+        </section>
+      </div>
+
+      <div class="options__panel" role="tabpanel" id="panel-network" data-panel="network" aria-labelledby="tab-network" hidden>
+        <section class="options__create-card">
+          <h2 class="options__section-title">AdGuard/ABP 필터 가져오기</h2>
+          <textarea id="filter-import-input" class="options__input options__rule-editor" placeholder="예:&#10;example.com##.ad-banner&#10;example.com#?#article:contains(&quot;광고&quot;)"></textarea>
+          <div class="options__template-actions">
+            <button id="filter-import-preview-button" type="button" class="options__secondary">가져오기 미리보기</button>
+            <button id="filter-import-apply-button" type="button">지원 규칙 저장</button>
+          </div>
+          <p id="filter-import-status" class="options__meta">cosmetic selector와 text 조건 규칙은 인포커터 프로필/오브젝트로, 지원되는 네트워크 규칙은 Chrome DNR 동적 규칙으로 가져옵니다.</p>
+        </section>
+
+        <section class="options__list-wrap">
+          <div id="network-rule-list" class="options__site-list"></div>
+          <p id="network-rule-empty-state" class="options__empty">저장된 네트워크 차단 규칙이 없습니다.</p>
+        </section>
+      </div>
+
+      <div class="options__panel" role="tabpanel" id="panel-template" data-panel="template" aria-labelledby="tab-template" hidden>
+        <section class="options__create-card">
+          <h2 class="options__section-title">템플릿 서버</h2>
+          <div class="options__template-toolbar">
+            <input id="template-server-url" class="options__input" type="text" placeholder="예: http://127.0.0.1:41800" />
+            <input id="template-server-token" class="options__input" type="password" placeholder="선택 사항: 서버 토큰" />
+            <button id="refresh-templates-button" type="button">템플릿 불러오기</button>
+          </div>
+          <p id="template-status" class="options__meta">로컬 또는 자체 호스팅 템플릿 서버를 연결해 네이버 같은 사이트용 템플릿을 불러와 적용할 수 있습니다.</p>
+          <div id="template-list" class="options__template-list"></div>
+        </section>
+      </div>
+
+      <div class="options__panel" role="tabpanel" id="panel-settings" data-panel="settings" aria-labelledby="tab-settings" hidden>
+        <section class="options__status-card">
+          <p id="global-status" class="options__meta">전역 상태를 불러오는 중...</p>
+          <p id="summary" class="options__meta">규칙 통계를 불러오는 중...</p>
+        </section>
+      </div>
+
+      <div class="options__panel" role="tabpanel" id="panel-name-watch" data-panel="name-watch" aria-labelledby="tab-name-watch" hidden>
+        <section class="options__create-card">
+          <h2 class="options__section-title">이름 관리</h2>
+          <div class="options__create-grid">
+            <input id="name-watch-name-input" class="options__input" type="text" placeholder="감시할 이름" />
+            <input id="name-watch-alias-input" class="options__input" type="text" placeholder="별칭 (쉼표 구분)" />
+            <button id="name-watch-add-button" type="button">추가</button>
+          </div>
+          <div id="name-watch-target-list" class="options__site-list" style="margin-top: 16px;"></div>
+        </section>
+
+        <section class="options__create-card">
+          <h2 class="options__section-title">설정</h2>
+          <div id="name-watch-settings-panel"></div>
+        </section>
+
+        <section class="options__list-wrap">
+          <h2 class="options__section-title">증거 목록</h2>
+          <p class="options__meta">본 자료는 소명 참고자료입니다. 다툼이 있는 사건에서는 공증·증거보전 신청·디지털 포렌식 등 추가 절차가 필요할 수 있습니다.</p>
+          <div id="name-watch-evidence-list" class="options__site-list"></div>
+        </section>
+      </div>
+
+      <div class="options__panel" role="tabpanel" id="panel-ai" data-panel="ai" aria-labelledby="tab-ai" hidden>
+        <section class="options__create-card">
+          <h2 class="options__section-title">AI 자동 가림</h2>
+          <label class="options__ai-toggle"><input id="ai-global-toggle" type="checkbox" /><span>AI 자동 가림 사용</span></label>
+          <p id="ai-status" class="options__meta">설정을 불러오는 중...</p>
+          <h2 class="options__section-title">가릴 카테고리</h2>
+          <div id="ai-category-list" class="options__ai-category-list"></div>
+          <h2 class="options__section-title">LiteLLM 연결</h2>
+          <div class="options__template-toolbar">
+            <input id="ai-endpoint" class="options__input" type="text" placeholder="https://llm.ranode.net/v1" />
+            <input id="ai-api-key" class="options__input" type="password" placeholder="API 키" />
+            <input id="ai-model" class="options__input" type="text" placeholder="모델 이름" />
+            <button id="ai-save-config-button" type="button">연결 저장</button>
+          </div>
+        </section>
+
+        <section class="options__list-wrap">
+          <h2 class="options__section-title">생성된 AI 규칙</h2>
+          <div class="options__ai-rule-toolbar">
+            <select id="ai-rule-filter" class="options__select"></select>
+            <button id="ai-rule-clear-button" type="button" class="options__ai-rule-clear">AI 규칙 모두 삭제</button>
+          </div>
+          <p id="ai-rule-summary" class="options__meta">AI 규칙을 불러오는 중...</p>
+          <div id="ai-rule-list" class="options__site-list"></div>
+          <p id="ai-rule-empty" class="options__empty">생성된 AI 규칙이 없습니다.</p>
+        </section>
+      </div>
+
+      <script type="module" src="src/options/index.js"></script>
+      <script type="module" src="src/options/tabs.js"></script>
+    </main>
+  </body>
+</html>

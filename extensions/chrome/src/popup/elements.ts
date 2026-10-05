@@ -1,0 +1,30 @@
+import { requiredElement } from "../shared/dom.js";
+
+const surface = "popup";
+
+export const siteLabelElement = requiredElement("site-label", HTMLElement, surface);
+export const ruleCountElement = requiredElement("rule-count", HTMLElement, surface);
+export const profileNameElement = requiredElement("profile-name", HTMLElement, surface);
+export const profileMatchersElement = requiredElement("profile-matchers", HTMLElement, surface);
+export const siteStateElement = requiredElement("site-state", HTMLElement, surface);
+export const globalStateElement = requiredElement("global-state", HTMLElement, surface);
+export const statusElement = requiredElement("status", HTMLElement, surface);
+export const pickerStateElement = requiredElement("picker-state", HTMLElement, surface);
+export const pickButtonElement = requiredElement("pick-button", HTMLButtonElement, surface);
+export const toggleSiteButtonElement = requiredElement("toggle-site-button", HTMLButtonElement, surface);
+export const toggleGlobalButtonElement = requiredElement("toggle-global-button", HTMLButtonElement, surface);
+export const manageButtonElement = requiredElement("manage-button", HTMLButtonElement, surface);
+export const refreshButtonElement = requiredElement("refresh-button", HTMLButtonElement, surface);
+export const clearButtonElement = requiredElement("clear-button", HTMLButtonElement, surface);
+export const textBlockProfileNameElement = requiredElement("text-block-profile-name", HTMLElement, surface);
+export const textBlockMatchersElement = requiredElement("text-block-matchers", HTMLElement, surface);
+export const textBlockStateElement = requiredElement("text-block-state", HTMLElement, surface);
+export const toggleTextBlockProfileButtonElement = requiredElement("toggle-text-block-profile-button", HTMLButtonElement, surface);
+export const toggleTextBlockGlobalButtonElement = requiredElement("toggle-text-block-global-button", HTMLButtonElement, surface);
+export const ruleListElement = requiredElement("rule-list", HTMLUListElement, surface);
+export const emptyStateElement = requiredElement("empty-state", HTMLElement, surface);
+export const debugSummaryElement = requiredElement("debug-summary", HTMLElement, surface);
+export const debugButtonElement = requiredElement("debug-button", HTMLButtonElement, surface);
+export const watchGlobalToggleElement = requiredElement("watch-global-toggle", HTMLInputElement, surface);
+export const watchStatusElement = requiredElement("watch-status", HTMLElement, surface);
+export const analyzeAiButtonElement = requiredElement("analyze-ai-button", HTMLButtonElement, surface);

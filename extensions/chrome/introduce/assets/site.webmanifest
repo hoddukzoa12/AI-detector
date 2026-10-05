@@ -1,0 +1,18 @@
+{
+  "name": "vibecode-chrome-extension-infocutter",
+  "icons": [
+    {
+      "src": "favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0b1f46",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
