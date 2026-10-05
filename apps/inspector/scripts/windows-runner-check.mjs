@@ -33,12 +33,19 @@ async function runOwned(command, args, extraEnv, name) {
   let stdout = '', stderr = '';
   child.stdout.on('data', value => { stdout += value.toString(); });
   child.stderr.on('data', value => { stderr += value.toString(); });
-  const exitCode = await new Promise((res, rej) => {
-    const timer = setTimeout(() => { child.kill('SIGKILL'); rej(new Error(`${name}: timeout`)); }, 180000);
-    child.once('error', error => { clearTimeout(timer); rej(error); });
-    child.once('exit', (code, signal) => { clearTimeout(timer); res(signal ? null : code); });
-  });
-  await writeFile(resolve(proof, `${name}.log`), stdout + stderr);
+  let exitCode;
+  try {
+    exitCode = await new Promise((res, rej) => {
+      const timer = setTimeout(() => { child.kill('SIGKILL'); rej(new Error(`${name}: timeout`)); }, 180000);
+      child.once('error', error => { clearTimeout(timer); rej(error); });
+      child.once('exit', (code, signal) => { clearTimeout(timer); res(signal ? null : code); });
+    });
+  } catch (error) {
+    report.checks.push({ name, exitCode: null, error: error.message });
+    await save(); throw error;
+  } finally {
+    await writeFile(resolve(proof, `${name}.log`), stdout + stderr);
+  }
   report.checks.push({ name, exitCode }); await save();
   assert.equal(exitCode, 0, `${name}: nonzero exit; inspect synthetic log`);
   return stdout.trim();

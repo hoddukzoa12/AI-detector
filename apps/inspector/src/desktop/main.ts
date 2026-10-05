@@ -14,8 +14,8 @@ if (!acquired) {
   app.exit(code);
 }
 else {
-  await app.whenReady();
-  try {
+  // Electron must finish evaluating this ESM entry before it can emit ready.
+  void app.whenReady().then(async () => {
     const exePath = app.getPath('exe');
     const paths = desktopPaths(process.resourcesPath, app.getAppPath());
     await access(paths.executablePath);
@@ -41,8 +41,8 @@ else {
       window.once('ready-to-show', () => window.show());
       await window.loadURL(server.url);
     }
-  } catch {
+  }).catch(() => {
     dialog.showErrorBox('점검 앱 시작 실패', '실행 설정, Chromium 파일, 출력 폴더 권한을 확인하세요. 키 값은 표시하지 않습니다.');
     app.exit(1);
-  }
+  });
 }
