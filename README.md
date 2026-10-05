@@ -1,5 +1,7 @@
 # AI-detector
 
+[![Windows package test](https://github.com/hoddukzoa12/AI-detector/actions/workflows/windows-test.yml/badge.svg)](https://github.com/hoddukzoa12/AI-detector/actions/workflows/windows-test.yml)
+
 공개 웹사이트의 은닉 텍스트와 이미지 광고를 점검하는 npm·Playwright 앱입니다. **Gemini OCR로 글자를 추출하고 CLEF로 광고를 분류**하며, 로컬 광고 판정이나 실패 시 대체 분류기를 사용하지 않습니다. Docker와 Electron Windows 패키지를 제공합니다.
 
 ```bash
@@ -24,6 +26,8 @@ Node 24 LTS를 사용합니다. 실제 점검은 CLEF 전송 동의와 OpenRoute
 [Windows package test](https://github.com/hoddukzoa12/AI-detector/actions/workflows/windows-test.yml)는 Linux에서 회귀 검사와 Windows ZIP 생성 후 **windows-2025**에서 실제 bundled Node·Chromium·Inspektor.exe 자체 점검·GUI 표시·정상 종료를 검사합니다. Actions → Windows package test → Run workflow로 다시 실행할 수 있습니다.
 
 실행 보고서와 GUI 스크린샷은 `windows-test-evidence`, 패키지는 `windows-package` artifact에 3일간 보관합니다. 검사는 합성 OCR/CLEF 응답을 명시적으로 주입하며 **실제 API 키·유료 모델 호출·실사이트 탐색은 사용하지 않습니다**.
+
+2026-10-05 [실제 실행](https://github.com/hoddukzoa12/AI-detector/actions/runs/37298661138)이 **성공**했습니다. 단위 473개·통합 14개, Windows EXE 자체 점검·GUI·보안 설정·정상 종료를 확인했습니다. [검증 기록과 화면 캡처](docs/windows-actions.md#2026-10-05-실제-실행-결과)를 보존했습니다.
 
 GitHub 러너는 Windows Server 2025이며 Windows 11 최종 사용자 PC 검증과 다릅니다. 실제 Windows 11·대표 사이트 정확도·30분 실행·두 실제 키 교체는 별도 확인이 필요합니다.
 

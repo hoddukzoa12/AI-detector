@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-05",
+  "repository": "hoddukzoa12/AI-detector",
+  "sourceCommit": "407896d7f4632bbc3a9f4ad7c29b80bbeb1bd039",
+  "sourceTree": "aeb8559cff63b8433e0fd27e840103f300809426",
+  "actionsRunId": 37298661138,
+  "actionsUrl": "https://github.com/hoddukzoa12/AI-detector/actions/runs/37298661138",
+  "conclusion": "success",
+  "linuxJob": {
+    "id": 111725869195,
+    "conclusion": "success",
+    "unitFiles": 40,
+    "unitTests": 473,
+    "browserIntegrationFiles": 4,
+    "browserIntegrationTests": 14,
+    "packageFiles": 689
+  },
+  "windowsJob": {
+    "id": 111727402824,
+    "conclusion": "success",
+    "runtimeReport": {
+      "schemaVersion": 1,
+      "assertions": "PASS",
+      "platform": "win32",
+      "osRelease": "10.0.26100",
+      "runnerImage": "win25-vs2026",
+      "sourceCommit": "407896d7f4632bbc3a9f4ad7c29b80bbeb1bd039",
+      "inferenceTransport": "EXPLICIT_SYNTHETIC_HTTP_MOCK",
+      "actualOcrInference": "NOT_RUN",
+      "actualClefInference": "NOT_RUN",
+      "actualWindows11": "NOT_RUN",
+      "targetPc30MinuteRun": "NOT_RUN",
+      "repositoryLicense": "UNRESOLVED",
+      "checks": [
+        {
+          "name": "bundled-node-version",
+          "exitCode": 0
+        },
+        {
+          "name": "bundled-node-self-test",
+          "exitCode": 0
+        },
+        {
+          "name": "bundled-node-evidence",
+          "assertions": "PASS",
+          "nodeVersion": "v24.19.0",
+          "chromiumVersion": "153.0.8010.12",
+          "officialFindings": 25,
+          "imageOwners": 20,
+          "imageOccurrences": 39,
+          "menuTitleNegatives": 22,
+          "source": "bundled-node-output"
+        },
+        {
+          "name": "electron-self-test",
+          "exitCode": 0
+        },
+        {
+          "name": "electron-evidence",
+          "assertions": "PASS",
+          "nodeVersion": "v24.19.0",
+          "chromiumVersion": "153.0.8010.12",
+          "officialFindings": 25,
+          "imageOwners": 20,
+          "imageOccurrences": 39,
+          "menuTitleNegatives": 22,
+          "source": "electron-output"
+        },
+        {
+          "name": "real-exe-gui",
+          "assertions": "PASS",
+          "config": {
+            "aiConfigured": false,
+            "aiRequired": true,
+            "model": "cloudflare/clef",
+            "ocrModel": "google/gemini-3.8-flash"
+          },
+          "security": {
+            "sandbox": true,
+            "contextIsolation": true,
+            "nodeIntegration": false,
+            "hardwareAcceleration": false
+          },
+          "closeExitCode": 0
+        }
+      ]
+    }
+  },
+  "firstAttempt": {
+    "runId": 37296189058,
+    "sourceCommit": "f74b1cccd8fd93d0ad652b54e0125934c9fbeafb",
+    "conclusion": "failure",
+    "failedCheck": "electron-self-test: timeout",
+    "fix": "Schedule startup with app.whenReady().then instead of awaiting readiness during ESM module evaluation. Two startup regression tests failed before the fix and passed after."
+  },
+  "localDocker": {
+    "assertions": "PASS",
+    "imageId": "sha256:b62ac10c0d090d6f3ebc5366758036a2519508635b1eb4c14ec06cb6f43b6f2a",
+    "sourceReuse": "Node core, lock, Docker build and smoke fixtures are byte-identical to the previously built image; Electron entry is unused by Docker. Actual Docker smoke was rerun.",
+    "hostVolumeHash": "PASS"
+  },
+  "screenshot": {
+    "path": "windows-gui-2026-10-05.png",
+    "sha256": "1a896fbd17e2bf1ca0622e454d8b1dea61d64721048f9e95d72dbf30586c2bb8"
+  },
+  "artifactsRetentionDays": 3,
+  "newPaidApiRequests": 0,
+  "artifacts": [
+    {
+      "id": 11340419613,
+      "name": "windows-test-evidence",
+      "size_in_bytes": 1887472,
+      "digest": "sha256:6124ff6c553ffb83592d25521bb7e5de7bfe3867748e03144e736dd277309568",
+      "expires_at": "2026-10-08T10:52:27Z"
+    },
+    {
+      "id": 11339204928,
+      "name": "windows-package",
+      "size_in_bytes": 407940962,
+      "digest": "sha256:1cdf477459351479d457a57102aedcd42e5f253e045860ab230026fed1779692",
+      "expires_at": "2026-10-08T10:50:29Z"
+    },
+    {
+      "id": 11339104864,
+      "name": "linux-test-evidence",
+      "size_in_bytes": 3097392,
+      "digest": "sha256:85e1de3e851078750999b5a01717cfcc67d83c95e6761559fe7d653cd4892c40",
+      "expires_at": "2026-10-08T10:50:31Z"
+    }
+  ]
+}

@@ -11,11 +11,13 @@
 | V2 상태·검토·상세·OCR·두 결과 | 구현·검증 | 원문 범위·참조·실바이트 해시·저장 실패/이전 V1 보존 |
 | 로컬 API·화면·중단 | 구현·검증 | 키/동의 필수·PNG 인증·세 목록·여섯 JSON·늦은 응답 불변 |
 | npm·Docker | 실행 검증 | HTTP200·종료·UID1001·실제 UI·볼륨 해시 |
-| Windows 폴더·ZIP | 생성·정적 검증 | 689파일·25 PE x64·필수19자산·CRC/바이트; GUI 미검증 |
-| 자체 점검 | Linux 실행 검증 | 모의 OCR/CLEF·DOM/빈 결과/이미지/메뉴4실행·반복 격리·desktop-mode CLI |
+| Windows 폴더·ZIP | 생성·정적·Server 2025 실행 검증 | 689파일·25 PE x64·필수19자산·CRC/바이트; 실제 EXE GUI·정상 종료 |
+| 자체 점검 | Linux·Windows Server 2025 실행 검증 | 모의 OCR/CLEF·DOM/빈 결과/이미지/메뉴4실행·bundled Node·실제 EXE |
 | 실제 모델 소형 평가 | 측정 | OCR 8·CLEF 10요청·전부HTTP200·재시도 0; 대표 정확도 아님 |
 
 2026-10-05 통합 코드dcaaf08에서 typecheck·lint·build·39파일471단위·4파일14통합·self-test·실Docker·Windows 정적 검사가 종료0으로 통과했습니다. 문서·소스/PDF 산출물은 이후 확정 커밋으로 다시 생성하며 그 커밋/해시는 배포의 최신 검증 보고서에서 구별합니다. 이전 f474343 산출물과 실사이트 성공·실패 기록은 보존했습니다.
+
+공개 저장소 `hoddukzoa12/AI-detector`의 코드 `407896d`에서 [GitHub Actions 37298661138](https://github.com/hoddukzoa12/AI-detector/actions/runs/37298661138)이 Linux·Windows 모두 성공했습니다. 40파일473단위·14통합·공식 자산 기반 패키징, Windows Server 2025의 실제 EXE 자체 점검·GUI·보안 설정·정상 종료를 확인했습니다. 최초 EXE 시간 초과는 Electron ESM 준비 이벤트의 대기 순서를 수정해 해결했고 실패 기록도 보존했습니다. 실제 Docker도 동일 Node 코어 이미지로 재검사했습니다. 새 유료 요청은 0회이며 [상세 기록](../windows-actions.md)과 화면 캡처를 보존했습니다.
 
 실제 OCR의 읽을 수 있는 이미지6개는 수작업 정답 162 code point와 문자 차이 0, 나머지는 무문자/읽기 불가 상태와 일치했습니다. CLEF 10표본 중 9개가 수동 선택과 일치했고 MEMBER는 비광고 정답 대신 불확실 검토로 남았습니다. 지연 OCR 2,492~6,496ms·CLEF 275~913ms, 제공 비용 합계 0.01596897달러입니다. 작은 합성 표본·모의 검사·정적 PE를 실제 사이트 정확도·공식 평가·Windows 동작으로 해석하지 않습니다.
 

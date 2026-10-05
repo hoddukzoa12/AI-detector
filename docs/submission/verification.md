@@ -29,7 +29,9 @@ CLEF는 추출 글자6건과 독립 텍스트4건 중 9건이 수동 선택과 �
 
 ## 배포 자료와 남은 실제 검증
 
-이번 Windows 패키징의 공식 metadata HTTPS 재요청은 HTTP503으로 실패했습니다. 이전에 검증한 동일 버전 checksum·Chromium LICENSE 캐시의 해시를 대조해 재사용하고 바이너리·전체 파일·ZIP을 다시 검증했습니다. 성공 기록은 캐시 재사용을 명시하며 새 metadata HTTP 다운로드나 서명 검증 성공으로 표시하지 않습니다.
+2026-10-05 공개 `AI-detector` 코드 `407896d7f4632bbc3a9f4ad7c29b80bbeb1bd039`에서 [Actions 37298661138](https://github.com/hoddukzoa12/AI-detector/actions/runs/37298661138)이 성공했습니다. 별도 깨끗한 Linux 러너의 473단위·14통합·자체 점검·공식 HTTPS 자산 기반 Windows 패키징/정적 검사와 Windows Server 2025 러너의 bundled Node·Chromium·실제 EXE 자체 점검·GUI·보안 설정·정상 종료를 확인했습니다. Windows 합성 정답은 DOM25·빈0·이미지20소유자/39발생·메뉴22음성/주변5양성이며 새 실제 모델 요청은 0회입니다. 첫 EXE 실행의 시간 초과와 Electron ESM 준비 순서 수정도 [영구 보고서](../verification/windows-actions-2026-10-05.json)에 구별해 기록했습니다. [GUI 캡처](../verification/windows-gui-2026-10-05.png)를 보존했으며 실제 Windows 11·사용자 키 교체·평가 PC 검증과 다릅니다.
+
+앞선 로컬 Windows 패키징의 공식 metadata HTTPS 재요청은 HTTP503으로 실패했습니다. 이전에 검증한 동일 버전 checksum·Chromium LICENSE 캐시의 해시를 대조해 재사용하고 바이너리·전체 파일·ZIP을 다시 검증했습니다. 이 역사 기록은 캐시 재사용을 명시하며 새 metadata HTTP 다운로드나 서명 검증 성공으로 표시하지 않습니다. 위 Actions의 별도 공식 다운로드 성공과 혼합하지 않습니다.
 
 GPU 없는 Windows 11에서 ZIP 해제→GUI→시작/중단→두 결과·이미지 근거→키 변경 재시작→자체 점검·정상 종료와 30분 평가 조건은 NOT_RUN입니다. 대표성 있는 독립 라벨의 실사이트 OCR/CLEF 정확도·실제 두 키 교체·운영망 오류도 미검증입니다. 더 큰 유료 실사이트 평가는 별도 범위·요청 상한으로 수행해야 합니다.
 
